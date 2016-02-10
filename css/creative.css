@@ -509,3 +509,13 @@ p.text-small {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.service-box img {
+    height: 50px;
+    margin-right: 10px;
+    display:inline-block;
+}
+
+.service-box .img-small {
+    height: 30px;
+}
