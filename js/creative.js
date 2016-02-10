@@ -30,10 +30,24 @@
     // Fit Text Plugin for Main Header
     $("h1").fitText(
         1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
+            minFontSize: '30px',
+            maxFontSize: '45px'
         }
     );
+
+    $(".header-content-inner h2").fitText(
+        2, {
+            minFontSize: '16px',
+            maxFontSize: '20px'
+        }
+    );
+
+    $(".header-content-inner p").fitText(
+        2, {
+            minFontSize: '14px',
+            maxFontSize: '18px'
+        }
+    )
 
     // Offset for Main Navigation
     $('#mainNav').affix({
