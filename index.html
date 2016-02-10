@@ -216,7 +216,7 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#constellations_atlas" class="portfolio-box">
                         <img src="img/portfolio/constellations_atlas.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -232,7 +232,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#apps_war" class="portfolio-box">
                         <img src="img/portfolio/apps_war.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -359,8 +359,79 @@
         <!--Modals for the projects-->
         <div class="container">
 
-            <!--TODO: -->
-            <!--TODO: -->
+            <div class="modal fade" id="constellations_atlas" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Constellations Atlas</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>The Constellation Atlas is a virtual simulation of the universe on the web using
+                                        Three.js. We implemented two versions of the Constellation Atlas respectively to
+                                        two approaches, one uses Points class with basic 2D texture for each star while
+                                        the other employs a more advanced custom shaders for SphereGeometry objects</p>
+                                    <hr class="light">
+                                    <p class="text-small">Programming Languages:</p>
+                                    <p class="text-small">JavaScript, OpenGL Shading Language (GLSL)</p>
+                                    <p class="text-small">Frameworks and Libraries:</p>
+                                    <p class="text-small">jQuery, Three.js, CSS3D</p>
+                                    <hr class="light">
+                                    <p><a href="http://thuy616.github.io/ConstellationsAtlas/version3.html">Demo</a></p>
+                                    <p><a href="http://thuy616.github.io/ConstellationsAtlas">Landing Page</a></p>
+                                    <p><a href="http://github.com/thuy616/ConstellationsAtlas">Source</a></p>
+                                    <p><a href="https://goo.gl/GVbuob">Performance Report</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="apps_war" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Apps Wars</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>A side by side comparison of top apps from Google Play Store and Apple App Store, implemented using MEAN stack with REST API server.</p>
+                                    <hr class="light">
+                                    <h4> Data Scraping from Play Store: </h4>
+                                    <p> Because Google doesn't provide Search API or RSS feeds for Play Store, information of Android apps is scraped from their web, processed and then saved to our database.
+                                        Information of iOS apps is retrieved using iTunes search API.
+                                        The scraper uses two Node.js modules, Request and Cheerio.
+                                        Request provides a single unified interface to handle both HTTP and HTTPS requests. In this project, the web page is downloaded directly into memory and then processed by Cheerio.
+                                        Cheerio enables processing the downloaded data in a way that is similar to jQuery selector.</p>
+                                    <hr class="light">
+                                    <p class="text-small">Programming Languages:</p>
+                                    <p class="text-small">JavaScript</p>
+                                    <p class="text-small">Frameworks and Libraries:</p>
+                                    <p class="text-small">NodeJS, AngularJS, Mongoose, ExpressJS, Bower, Request, Cheerio</p>
+                                    <p class="text-small">Database: MongoDB</p>
+                                    <hr class="light">
+                                    <p>Screenshots</p>
+                                    <!--TODO: add images-->
+                                    <hr class="light">
+                                    <p><a href="#">Demo</a></p>
+                                    <p><a href="http://github.com/thuy616/Wisely">Source</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
