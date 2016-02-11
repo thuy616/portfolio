@@ -285,7 +285,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#kth_3d" class="portfolio-box">
                         <img src="img/portfolio/kth.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -301,7 +301,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#estia" class="portfolio-box">
                         <img src="img/portfolio/estia.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -316,7 +316,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#oil_vis" class="portfolio-box">
                         <img src="img/portfolio/oilvis.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -331,7 +331,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#laptops_vis" class="portfolio-box">
                         <img src="img/portfolio/laptops.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -346,7 +346,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#ir" class="portfolio-box">
                         <img src="img/portfolio/query_expansion.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -385,11 +385,18 @@
                                     <p class="text-small">JavaScript, OpenGL Shading Language (GLSL)</p>
                                     <p class="text-small">Frameworks and Libraries:</p>
                                     <p class="text-small">jQuery, Three.js, CSS3D</p>
+
                                     <hr class="light">
                                     <p><a href="http://thuy616.github.io/ConstellationsAtlas/version3.html">Demo</a></p>
                                     <p><a href="http://thuy616.github.io/ConstellationsAtlas">Landing Page</a></p>
                                     <p><a href="http://github.com/thuy616/ConstellationsAtlas">Source</a></p>
                                     <p><a href="https://goo.gl/GVbuob">Performance Report</a></p>
+
+                                    <hr class="light">
+                                    <p>Screenshots</p>
+                                    <img src="img/screenshots/small_ca_1.jpg">
+                                    <img src="img/screenshots/small_ca_3.jpg">
+
                                 </div>
                             </div>
                         </div>
@@ -413,23 +420,22 @@
                                     <p>A side by side comparison of top apps from Google Play Store and Apple App Store, implemented using MEAN stack with REST API server.</p>
                                     <hr class="light">
                                     <h4> Data Scraping from Play Store: </h4>
-                                    <p> Because Google doesn't provide Search API or RSS feeds for Play Store, information of Android apps is scraped from their web, processed and then saved to our database.
-                                        Information of iOS apps is retrieved using iTunes search API.
-                                        The scraper uses two Node.js modules, Request and Cheerio.
-                                        Request provides a single unified interface to handle both HTTP and HTTPS requests. In this project, the web page is downloaded directly into memory and then processed by Cheerio.
-                                        Cheerio enables processing the downloaded data in a way that is similar to jQuery selector.</p>
+                                    <p> Information of iOS apps is retrieved using iTunes search API.
+                                        The scraper uses two Node.js modules, Request and Cheerio. Cheerio enables processing the downloaded data in a way that is similar to jQuery selector.</p>
                                     <hr class="light">
-                                    <p class="text-small">Programming Languages:</p>
-                                    <p class="text-small">JavaScript</p>
+                                    <p class="text-small">Programming Languages: Javascript</p>
                                     <p class="text-small">Frameworks and Libraries:</p>
                                     <p class="text-small">NodeJS, AngularJS, Mongoose, ExpressJS, Bower, Request, Cheerio, Bootstrap</p>
                                     <p class="text-small">Database: MongoDB</p>
+
+                                    <hr class="light">
+                                    <!--TODO: <p><a href="#">Demo</a></p>-->
+                                    <p><a href="http://github.com/thuy616/Wisely">Source</a></p>
+
                                     <hr class="light">
                                     <p>Screenshots</p>
-                                    <!--TODO: add images-->
-                                    <hr class="light">
-                                    <p><a href="#">Demo</a></p>
-                                    <p><a href="http://github.com/thuy616/Wisely">Source</a></p>
+                                    <img src="img/screenshots/apps_war.png">
+                                    <img src="img/screenshots/appswar2.jpg">
                                 </div>
                             </div>
                         </div>
@@ -454,7 +460,7 @@
 
 
                                     <hr class="light">
-                                    <p><a href="#">Business Model</a></p>
+                                    <p><a href="https://goo.gl/1g07ey">Business Model</a></p>
 
                                     <hr class="light">
                                     <p class="text-small">Prototyped using:</p>
@@ -491,11 +497,13 @@
                                     <p class="text-small">Frameworks and Libraries:</p>
                                     <p class="text-small">Django, Django REST Framework</p>
                                     <p class="text-small">Database: sqlite</p>
+
+                                    <hr class="light">
+                                    <p><a href="http://git.niksula.hut.fi/kachwat1/wsdproject/tree/dev">Source</a></p>
+
                                     <hr class="light">
                                     <p>Screenshots</p>
-                                    <!--TODO: add images-->
-                                    <hr class="light">
-                                    <p><a href="#">Source</a></p>
+                                    <img src="img/screenshots/awesome_games.jpg">
                                 </div>
                             </div>
                         </div>
@@ -506,28 +514,156 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="awesomegames" role="dialog">
+            <div class="modal fade" id="kth_3d" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">JS Awesome Games</h3>
+                            <h3 class="modal-title">KTH Courtyard 3D</h3>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>An online platform for JavaScript games where players can buy and play games online. Developers can register, deploy and sell their games.</p>
+                                    <p>An interactive Walk-through of KTH Courtyard in first-person shooter perspective using Blender as 3D modeling tool and Unity GameEngine.</p>
                                     <hr class="light">
                                     <p class="text-small">Programming Languages:</p>
-                                    <p class="text-small">Python, JavaScript</p>
-                                    <p class="text-small">Frameworks and Libraries:</p>
-                                    <p class="text-small">Django, Django REST Framework</p>
-                                    <p class="text-small">Database: sqlite</p>
+                                    <p class="text-small">C#, OpenGL Shading Language (GLSL)</p>
+                                    <p class="text-small">Software:</p>
+                                    <p class="text-small">Blender, Unity, CrazyBump, Photoshop, Gimp</p>
+                                    
+                                    <hr class="light">
+                                    <p><a href="#">Demo</a></p>
+                                    <p>(required installing Unity Web Player plugin)</p>
+                                    <hr class="light">
+                                    <p><a href="#">Project Blog</a></p>
+
                                     <hr class="light">
                                     <p>Screenshots</p>
-                                    <!--TODO: add images-->
+                                    <img src="img/screenshots/kth_statue.jpg">
+                                    <img src="img/screenshots/kth_3d.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="estia" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Estia</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>A weekend hackathon concept of LEDs Indoor Navigation, Room Reservation, and Energy Usage Visualization System</p>
+
                                     <hr class="light">
-                                    <p><a href="#">Source</a></p>
+                                    <p><a href="https://youtu.be/Kl3NdvhA-Ao">Concept Video</a></p>
+
+                                    <hr class="light">
+
+                                    <p>Prototype:</p>
+                                    <!--TODO: add images-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="oil_vis" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">The World Economy through Oil Data Visualization</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>Telling story of the world economy through oil data in a slide show format.</p>
+                                    <hr class="light">
+                                    <p class="text-small">Programming Language:</p>
+                                    <p class="text-small">JavaScript</p>
+                                    <p class="text-small">Frameworks and Libraries:</p>
+                                    <p class="text-small">jQuery, D3.js, reveal.js, topojson.js, datamaps.js</p>
+
+                                    <hr class="light">
+                                    <p><a href="thuy616.github.io/oildatavis">Demo</a></p>
+                                    <hr class="light">
+                                    <p><a href="https://goo.gl/9oja4U">Course Report</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="laptops_vis" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Which Laptop should I buy?</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>A small visualization tool to compare laptops.</p>
+                                    <hr class="light">
+                                    <p class="text-small">Programming Language:</p>
+                                    <p class="text-small">JavaScript</p>
+                                    <p class="text-small">Frameworks and Libraries:</p>
+                                    <p class="text-small">jQuery, Charts.js, dataTables.js</p>
+
+                                    <hr class="light">
+                                    <p><a href="http://thuy616.github.io/Laptops2016vis/src/">Demo</a></p>
+
+                                    <hr class="light">
+                                    <p>Screenshot</p>
+                                    <img src="img/screenshots/laptops_vis.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ir" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Query Expansion using Wikipedia data</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <p>A project on Search Engine and Information Retrieval that explores methods to expand query by adding synonyms derived from Wikipedia pages and Porter Stemming Algorithm.</p>
+                                    <hr class="light">
+                                    <p class="text-small">Programming Language:</p>
+                                    <p class="text-small">Java, Python for text processing unit</p>
+
+                                    <hr class="light">
+                                    <p><a href="https://goo.gl/QFnXSs">Report</a></p>
                                 </div>
                             </div>
                         </div>

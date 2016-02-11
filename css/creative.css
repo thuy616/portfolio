@@ -519,3 +519,9 @@ p.text-small {
 .service-box .img-small {
     height: 30px;
 }
+
+.modal-body img {
+    height: 100px;
+    display:inline-block;
+    margin-right: 10px;
+}
