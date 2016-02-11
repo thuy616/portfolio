@@ -527,3 +527,11 @@ p.text-small {
     display:inline-block;
     margin-right: 10px;
 }
+
+.modal {
+    position: fixed;
+    top: 3%;
+    left: 2%;
+    right: 2%;
+    bottom: 3%;
+}
