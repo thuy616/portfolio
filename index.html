@@ -21,6 +21,9 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/remodal.css" type="text/css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css" type="text/css">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
@@ -224,10 +227,10 @@
     </section>
 
     <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
+        <div class="container-fluid remodal-bg">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#constellations_atlas" class="portfolio-box">
+                    <a href="#constellations_atlas" class="portfolio-box">
                         <img src="img/portfolio/constellations_atlas.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -243,7 +246,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#apps_war" class="portfolio-box">
+                    <a href="#apps_war" class="portfolio-box">
                         <img src="img/portfolio/appswar.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -258,7 +261,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#libreasy" class="portfolio-box">
+                    <a href="#libreasy" class="portfolio-box">
                         <img src="img/portfolio/libreasy.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -273,7 +276,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#awesomegames" class="portfolio-box">
+                    <a href="#awesomegames" class="portfolio-box">
                         <img src="img/portfolio/awesome.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -288,7 +291,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#kth_3d" class="portfolio-box">
+                    <a href="#kth_3d" class="portfolio-box">
                         <img src="img/portfolio/kth.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -304,7 +307,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#estia" class="portfolio-box">
+                    <a href="#estia" class="portfolio-box">
                         <img src="img/portfolio/estia.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -319,7 +322,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#oil_vis" class="portfolio-box">
+                    <a href="#oil_vis" class="portfolio-box">
                         <img src="img/portfolio/oilvis.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -334,7 +337,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#laptops_vis" class="portfolio-box">
+                    <a href="#laptops_vis" class="portfolio-box">
                         <img src="img/portfolio/laptops.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -349,7 +352,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#ir" class="portfolio-box">
+                    <a href="#ir" class="portfolio-box">
                         <img src="img/portfolio/query_expansion.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -369,206 +372,175 @@
         <!--Modals for the projects-->
         <div class="container">
 
-            <div class="modal  active" id="constellations_atlas" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Constellations Atlas</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>The Constellation Atlas is a virtual simulation of the universe on the web using
-                                        Three.js. We implemented two versions of the Constellation Atlas respectively to
-                                        two approaches, one uses Points class with basic 2D texture for each star while
-                                        the other employs a more advanced custom shaders for SphereGeometry objects</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Languages:</p>
-                                    <p class="text-small">JavaScript, OpenGL Shading Language (GLSL)</p>
-                                    <p class="text-small">Frameworks and Libraries:</p>
-                                    <p class="text-small">jQuery, Three.js, CSS3D</p>
+            <div class="remodal" data-remodal-id="constellations_atlas">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Constellations Atlas</h1>
+                <h5>Course Project - WWW Applications - Aalto University</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>The Constellation Atlas is a virtual simulation of the universe on the web using
+                            Three.js. We implemented two versions of the Constellation Atlas respectively to
+                            two approaches, one uses Points class with basic 2D texture for each star while
+                            the other employs a more advanced custom shaders for SphereGeometry objects</p>
+                        <hr class="light">
+                        <p class="text-small">Programming Languages:</p>
+                        <p class="text-small">JavaScript, OpenGL Shading Language (GLSL)</p>
+                        <p class="text-small">Frameworks and Libraries:</p>
+                        <p class="text-small">jQuery, Three.js, CSS3D</p>
 
-                                    <hr class="light">
-                                    <p><a href="http://thuy616.github.io/ConstellationsAtlas/version3.html">Demo</a></p>
-                                    <p><a href="http://thuy616.github.io/ConstellationsAtlas">Landing Page</a></p>
-                                    <p><a href="http://github.com/thuy616/ConstellationsAtlas">Source</a></p>
-                                    <p><a href="https://goo.gl/GVbuob">Performance Report</a></p>
+                        <hr class="light">
+                        <p><a href="http://thuy616.github.io/ConstellationsAtlas/version3.html" target="_blank">Demo</a></p>
+                        <p><a href="http://thuy616.github.io/ConstellationsAtlas" target="_blank">Landing Page</a></p>
+                        <p><a href="http://github.com/thuy616/ConstellationsAtlas" target="_blank">Source</a></p>
+                        <p><a href="https://goo.gl/GVbuob" target="_blank">Performance Report</a></p>
 
-                                    <hr class="light">
-                                    <p>Screenshots</p>
-                                    <img src="img/screenshots/small_ca_1.jpg">
-                                    <img src="img/screenshots/small_ca_3.jpg">
+                        <hr class="light">
+                        <p>Screenshots</p>
+                        <img src="img/screenshots/small_ca_1.jpg">
+                        <img src="img/screenshots/small_ca_3.jpg">
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
                     </div>
                 </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="apps_war" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Apps Wars</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>A side by side comparison of top apps from Google Play Store and Apple App Store, implemented using MEAN stack with REST API server.</p>
-                                    <hr class="light">
-                                    <h4> Data Scraping from Play Store: </h4>
-                                    <p> Information of iOS apps is retrieved using iTunes search API.
-                                        The scraper uses two Node.js modules, Request and Cheerio. Cheerio enables processing the downloaded data in a way that is similar to jQuery selector.</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Languages: Javascript</p>
-                                    <p class="text-small">Frameworks and Libraries:</p>
-                                    <p class="text-small">NodeJS, AngularJS, Mongoose, ExpressJS, Bower, Request, Cheerio, Bootstrap</p>
-                                    <p class="text-small">Database: MongoDB</p>
+            <div class="remodal" data-remodal-id="apps_war" id="apps_war" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Apps War</h1>
+                <h5>Side Project to explore MEAN stack and Web scraping</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>A side by side comparison of top apps from Google Play Store and Apple App Store, implemented using MEAN stack with REST API server.</p>
+                        <hr class="light">
+                        <h4> Data Scraping from Play Store: </h4>
+                        <p> Information of iOS apps is retrieved using iTunes search API.
+                            The scraper uses two Node.js modules, Request and Cheerio. Cheerio enables processing the downloaded data in a way that is similar to jQuery selector.</p>
+                        <hr class="light">
+                        <p class="text-small">Programming Languages: Javascript</p>
+                        <p class="text-small">Frameworks and Libraries:</p>
+                        <p class="text-small">NodeJS, AngularJS, Mongoose, ExpressJS, Bower, Request, Cheerio, Bootstrap</p>
+                        <p class="text-small">Database: MongoDB</p>
 
-                                    <hr class="light">
-                                    <!--TODO: <p><a href="#">Demo</a></p>-->
-                                    <p><a href="http://github.com/thuy616/Wisely">Source</a></p>
+                        <hr class="light">
+                        <!--TODO: <p><a href="#">Demo</a></p>-->
+                        <p><a href="http://github.com/thuy616/Wisely" target="_blank">Source</a></p>
 
-                                    <hr class="light">
-                                    <p>Screenshots</p>
-                                    <img src="img/screenshots/apps_war.png">
-                                    <img src="img/screenshots/appswar2.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <hr class="light">
+                        <p>Screenshots</p>
+                        <img src="img/screenshots/apps_war.png">
+                        <img src="img/screenshots/appswar2.jpg">
                     </div>
                 </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="libreasy" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">LibrEasy</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>A startup concept "Netflix for Books" subscription service with games and gamified features to promote leisure reading in school-aged children.</p>
+            <div class="remodal" data-remodal-id="libreasy" id="libreasy" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>LIBREASY</h1>
+                <h5>Startup Idea - Business Development Lab - KTH</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>A "Netflix for Books" subscription service for children.
+                            We envision that reading for children can be as much fun as playing games
+                            by offering them unlimited access to our library and incorporating games and gamification features into their reading experiences.
+                        </p>
+                        
+                        <hr class="light">
+                        <p><a href="https://goo.gl/1g07ey" target="_blank">Business Model</a></p>
 
+                        <hr class="light">
+                        <p class="text-small">Prototyped using:</p>
+                        <p class="text-small">Photoshop, html5, css</p>
 
-                                    <hr class="light">
-                                    <p><a href="https://goo.gl/1g07ey">Business Model</a></p>
+                        <hr class="light">
+                        <img src="img/screenshots/libreasy.jpg">
+                        <!--TODO: add images-->
 
-                                    <hr class="light">
-                                    <p class="text-small">Prototyped using:</p>
-                                    <p class="text-small">Photoshop, html5, css</p>
-
-                                    <hr class="light">
-                                    <p>Prototype</p>
-                                    <!--TODO: add images-->
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
                     </div>
                 </div>
+
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
+
             </div>
 
-            <div class="modal  active" id="awesomegames" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">JS Awesome Games</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>An online platform for JavaScript games where players can buy and play games online. Developers can register, deploy and sell their games.</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Languages:</p>
-                                    <p class="text-small">Python, JavaScript</p>
-                                    <p class="text-small">Frameworks and Libraries:</p>
-                                    <p class="text-small">Django, Django REST Framework</p>
-                                    <p class="text-small">Database: sqlite</p>
+            <div class="remodal" data-remodal-id="awesomegames" id="awesomegames" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Awesome Games</h1>
+                <h5>Course Project - Web Software Development - Aalto University</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>An online platform for JavaScript games where players can buy and play games online. Developers can register, deploy and sell their games.</p>
+                        <hr class="light">
+                        <p class="text-small">Programming Languages:</p>
+                        <p class="text-small">Python, JavaScript</p>
+                        <p class="text-small">Frameworks and Libraries:</p>
+                        <p class="text-small">Django, Django REST Framework</p>
+                        <p class="text-small">Database: sqlite</p>
 
-                                    <hr class="light">
-                                    <p><a href="http://git.niksula.hut.fi/kachwat1/wsdproject/tree/dev">Source</a></p>
+                        <hr class="light">
+                        <p><a href="http://git.niksula.hut.fi/kachwat1/wsdproject/tree/dev" target="_blank">Source</a></p>
 
-                                    <hr class="light">
-                                    <p>Screenshots</p>
-                                    <img src="img/screenshots/awesome_games.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <hr class="light">
+                        <p>Screenshots</p>
+                        <img src="img/screenshots/awesome_games.jpg">
                     </div>
                 </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
+
             </div>
 
-            <div class="modal  active" id="kth_3d" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">KTH Courtyard 3D</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>An interactive Walk-through of KTH Courtyard in first-person shooter perspective using Blender as 3D modeling tool and Unity GameEngine.</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Languages:</p>
-                                    <p class="text-small">C#, OpenGL Shading Language (GLSL)</p>
-                                    <p class="text-small">Software:</p>
-                                    <p class="text-small">Blender, Unity, CrazyBump, Photoshop, Gimp</p>
-                                    
-                                    <hr class="light">
-                                    <p><a href="#">Demo</a></p>
-                                    <p>(required installing Unity Web Player plugin)</p>
-                                    <hr class="light">
-                                    <p><a href="#">Project Blog</a></p>
+            <div class="remodal" data-remodal-id="kth_3d" id="kth_3d" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>KTH Courtyard 3D Walkthrough</h1>
+                <h5>Course Project - Computer Graphics - KTH</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>An interactive Walk-through of KTH Courtyard in first-person perspective using Blender as 3D modeling tool and Unity GameEngine.
+                            This project is part of the broader 'Interactive Walkthrough of KTH Campus' project, which seeks
+                            to build a 3D virtual replica of the surrounding area of ​​the Visualization Studio at KTH to
+                            achieve of a realistic virtual walkthrough.
+                            This project helped me and my project teammates - as beginners - to have a better understanding of various 3D modeling concepts and techniques,
+                            for example, 2D texture creation, texture mapping, lighting and shading, rendering, positioning, etc.</p>
+                        <hr class="light">
+                        <p class="text-small">Programming Languages:</p>
+                        <p class="text-small">C#, OpenGL Shading Language (GLSL)</p>
+                        <p class="text-small">Software:</p>
+                        <p class="text-small">Blender, Unity, CrazyBump, Photoshop, Gimp</p>
 
-                                    <hr class="light">
-                                    <p>Screenshots</p>
-                                    <img src="img/screenshots/kth_statue.jpg">
-                                    <img src="img/screenshots/kth_3d.jpg">
+                        <hr class="light">
+                        <p><a href="http://wiseweb.altervista.org/kth3d/WebBuild.html" target="_blank">Demo</a></p>
+                        <p class="text-small">(required installing Unity Web Player plugin)</p>
+                        <hr class="light">
+                        <p><a href="http://kthcourtyard3d.blogspot.fi/" target="_blank">Project Blog</a></p>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <hr class="light">
+                        <p>Screenshots</p>
+                        <img src="img/screenshots/kth_statue.jpg">
+                        <img src="img/screenshots/kth_3d.jpg">
+
                     </div>
                 </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="estia" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Estia</h3>
-                        </div>
-                        <div class="modal-body">
+            <div class="remodal" data-remodal-id="estia" id="estia">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Estia - Spirit of the Building</h1>
+                <h5>Concept for <a href="http://goo.gl/DIV6pX">3D City Model Hackathon</a></h5>
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>A weekend hackathon concept of LEDs Indoor Navigation, Room Reservation, and Energy Usage Visualization System</p>
+                                    <p>Estia group developed a data-driven adaptive LEDs lighting and way finding system that promotes space sharing for energy saving and also allows the building to communicate with people through lighting and multiple devices.
+                                        We started this Hackathon by thinking about how buildings communicate with people. How can all the data of buildings such as heating, electricity usage, water usage, and occupancy be effectively communicated to the people who are using the building.
+                                        The whole concept was to avoid buildings where one receives the information through smartphones but to have a system that integrates the information with the actual interior design and the architecture of the building.
+                                        At the back end there is an analytic model of energy data to visualize such data in a deeper way for people to understand how they use their energy.</p>
 
                                     <hr class="light">
-                                    <p><a href="https://youtu.be/Kl3NdvhA-Ao">Concept Video</a></p>
+                                    <p><a href="https://youtu.be/Kl3NdvhA-Ao" target="_blank">Concept Video</a></p>
 
                                     <hr class="light">
 
@@ -577,57 +549,48 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="oil_vis" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">The World Economy through Oil Data Visualization</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>Telling story of the world economy through oil data in a slide show format.</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Language:</p>
-                                    <p class="text-small">JavaScript</p>
-                                    <p class="text-small">Frameworks and Libraries:</p>
-                                    <p class="text-small">jQuery, D3.js, reveal.js, topojson.js, datamaps.js</p>
+            <div class="remodal" data-remodal-id="oil_vis" id="oil_vis" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>The World Economy through Oil Data</h1>
+                <h5>Course Project - Exploratory Data Visualization - Aalto University</h5>
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <p>Oil data is complex because it covers many countries, spans over many years, and has
+                                many dimensions. The aim of this visualization is to communicate the complex oil data
+                                with clarity and precision to the audience who are not experts in the field. “The World Econ-
+                                omy through Oil Data” visualization also explores the storytelling elements to guide audience
+                                through an interpretation path to answer following questions: Why are oil prices falling so
+                                much now? Who benefits from low oil prices? Who suffers? How oil data relates to the world
+                                economy?</p>
 
-                                    <hr class="light">
-                                    <p><a href="thuy616.github.io/oildatavis">Demo</a></p>
-                                    <hr class="light">
-                                    <p><a href="https://goo.gl/9oja4U">Course Report</a></p>
+                            <hr class="light">
+                            <p class="text-small">Programming Language:</p>
+                            <p class="text-small">JavaScript</p>
+                            <p class="text-small">Frameworks and Libraries:</p>
+                            <p class="text-small">jQuery, D3.js, reveal.js, topojson.js, datamaps.js</p>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <hr class="light">
+                            <p><a href="http://thuy616.github.io/oildatavis" target="_blank">Demo</a></p>
+                            <hr class="light">
+                            <p><a href="https://goo.gl/9oja4U" target="_blank">Course Report</a></p>
+
                         </div>
                     </div>
-                </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="laptops_vis" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Which Laptop should I buy?</h3>
-                        </div>
-                        <div class="modal-body">
+            <div class="remodal" data-remodal-id="laptops_vis" id="laptops_vis" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Which Laptop should I buy</h1>
+                <h5>Side Project to fiddle with Charts.js</h5>
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>A small visualization tool to compare laptops.</p>
+                                    <p>A small visualization tool to compare laptops and find the best one suitable to your needs.</p>
                                     <hr class="light">
                                     <p class="text-small">Programming Language:</p>
                                     <p class="text-small">JavaScript</p>
@@ -635,46 +598,35 @@
                                     <p class="text-small">jQuery, Charts.js, dataTables.js</p>
 
                                     <hr class="light">
-                                    <p><a href="http://thuy616.github.io/Laptops2016vis/src/">Demo</a></p>
+                                    <p><a href="http://thuy616.github.io/Laptops2016vis/src/" target="_blank">Demo</a></p>
 
                                     <hr class="light">
                                     <p>Screenshot</p>
                                     <img src="img/screenshots/laptops_vis.jpg">
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
-            <div class="modal  active" id="ir" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Query Expansion using Wikipedia data</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <p>A project on Search Engine and Information Retrieval that explores methods to expand query by adding synonyms derived from Wikipedia pages and Porter Stemming Algorithm.</p>
-                                    <hr class="light">
-                                    <p class="text-small">Programming Language:</p>
-                                    <p class="text-small">Java, Python for text processing unit</p>
+            <div class="remodal" data-remodal-id="ir" id="ir" >
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Query Expansion using Wikipedia data</h1>
+                <h5>Course Project - Search Engine and Information Retrieval - KTH</h5>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p>A project on Search Engine and Information Retrieval that explores methods to expand query
+                            by adding synonyms derived from Wikipedia pages and Porter Stemming Algorithm.</p>
+                        <hr class="light">
+                        <p class="text-small">Programming Language:</p>
+                        <p class="text-small">Java, Python for text processing unit</p>
 
-                                    <hr class="light">
-                                    <p><a href="https://goo.gl/QFnXSs">Report</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <hr class="light">
+                        <p><a href="https://goo.gl/QFnXSs" target="_blank">Report</a></p>
                     </div>
                 </div>
+                <br>
+                <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
             </div>
 
         </div>
@@ -718,6 +670,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/remodal.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>

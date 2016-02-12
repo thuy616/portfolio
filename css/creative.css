@@ -470,8 +470,6 @@ fieldset[disabled] .btn-primary.active {
 
 ::selection {
     text-shadow: none;
-
-    background: #222;
 }
 
 .page-scroll::selection {
@@ -502,16 +500,6 @@ p.text-small {
   margin-top: 10px;
 }
 
-.modal-title h2, h3, h4 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.modal-body p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .service-box img {
     height: 50px;
     margin-right: 10px;
@@ -522,16 +510,26 @@ p.text-small {
     height: 30px;
 }
 
-.modal-body img {
-    height: 100px;
-    display:inline-block;
-    margin-right: 10px;
+.remodal {
+    text-align: center;
 }
 
-.modal {
-    position: fixed;
-    top: 3%;
-    left: 2%;
-    right: 2%;
-    bottom: 3%;
+.remodal img {
+    height: 100px;
+    display:inline-block;
+    margin: 5px;
+}
+
+.remodal p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 641px) {
+    .remodal {
+        max-width: 60%;
+    }
+
+    .remodal h1 {
+        margin: 25px 0;
+    }
 }
