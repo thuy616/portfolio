@@ -59,10 +59,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#resume">Resume</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#resume">Resume</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -77,13 +77,17 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
+
                 <h1>Thuy Nguyen</h1>
                 <h2>Full-Stack Developer</h2>
 
-                <p>I love to write beautiful code and make visually stunning web applications.</p>
-                <h5>
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">More about me</a>
-                </h5>
+                <p style="font-weight:lighter;">I love to write beautiful code and make visually stunning web applications.</p>
+                    <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">More about me</a> -->
+                <div style="display:block;">
+                  <a href="#about" class="btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                  </a>
+                </div>
             </div>
         </div>
     </header>
@@ -91,22 +95,158 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2" style="text-align: justify;">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading"></h2>
                     <hr class="light">
-                    <p class="text-faded">Besides my current job as a full-stack developer trainee, I enjoy learning new
-                        frameworks and new technologies in my free time. The pace of evolution for web technologies has
-                        been exceptionally fast. APIs, libraries, and frameworks appear and disappear in a blink of an eye.
-                        I like that companies and developers have to keep pace with <a href="mybookmarks.html" style="color: lightskyblue;">newest technologies</a> to be part of the game.
-                        I took up Web development after 2 years working as a C# developer and that was one of my best decisions.</p>
-
-                      <p class="text-faded">I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.</p>
-                    <p class="text-faded">Having lived in Vietnam, Singapore, Switzerland, the Netherlands, and Sweden, I gain a deeper insight into different cultures and working styles.
+                    <p class="text-faded text-light">
+                      I had worked in a large, structured organization as well as small startups.
+                      That gave me a strong understanding of what’s the best fit for me. Being in a high-energy fast-paced environment is essential for me to thrive and be happy. I enjoy exploring new technologies both at work and in my free time,
+                    </p>
+                    <p class="text-faded text-light">I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.</p>
+                    <p class="text-faded text-light">Having lived in Vietnam, Singapore, Switzerland, the Netherlands, Sweden, Finland, and now in the U.S., I gain deep insights into different cultures and working styles.
                       I understand people with different backgrounds and am able to adapt myself to work effectively in culturally diverse teams.</p>
-                    <p class="text-faded">I am now living and working in Helsinki, Finland, while pursuing a Master’s Degree at Aalto University with major in Web Applications and minor in Innovation and Entrepreneurship.</p>
+                    <p class="text-faded text-light">I am currently working in San Francisco, as a Software Engineer Trainee at <a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>.</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#portfolio" class="btn btn-default btn-xl">My Projects</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Resume</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
+                        <h3>Experience</h3>
+                        <div class="content">
+                            <hr>
+                            <h4>Web Software Engineer Trainee</h4>
+                            <img src="img/logos/detour_logo.png">
+                            <p class="text-muted text-small"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.</p>
+                            <p class="text-muted text-tiny">07/2016 - now</p>
+                            <p class="text-muted text-small">Build from scratch a Content Management Platform - Decentral - an isomorphic Web app which uses React Redux and Hapi server.</p>
+                            <p class="text-muted text-small">Maintain existing Websites and Admin panels.</p>
+                            <p class="text-muted text-small">Implement endpoints of the NodeJS API to support Web features.</p>
+                            <hr>
+                            <h4>Java Software Engineer</h4>
+                            <img src="img/logos/idt_logo.png">
+                            <p class="text-muted text-small"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland</p>
+                            <p class="text-muted text-tiny">10/2015 - 05/2016</p>
+                            <p class="text-muted text-small">Research for Master Thesis on Microservices Communication - Benchmarking gRPC vs. Apache Thrift vs. Avro</p>
+                            <p class="text-muted text-small">Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
+                            <hr>
+                            <h4>C# Software Engineer</h4>
+                            <img src="img/logos/yokogawa_logo.gif">
+                            <p class="text-muted text-small"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore</p>
+                            <p class="text-muted text-tiny">05/2012 - 07/2014</p>
+                            <p class="text-muted text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.</p>
+                            <p class="text-muted text-small">Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework</p>
+                            <p class="text-muted text-small">Designed database-schemas and XML schemas for data models</p>
+                            <p class="text-muted text-small">Transformed high-level specifications into detailed technical designs with UML diagrams</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Education</h3>
+                        <div class="content">
+                            <hr>
+                            <h4>MSc (Double Degree) ICT Innovation</h4>
+                            <img src="img/logos/aalto_logo.png">
+                            <p class="text-muted text-small">Aalto University, Helsinki, Finland</p>
+                            <p class="text-tiny">08/2014 - 11/2016</p>
+                            <p class="text-muted text-small">Graduated with Honours</p>
+                            <p class="text-muted text-small"><strong>GPA: 4.64/5.0</strong></p>
+                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Aalto_degree_certificate.pdf">Degree's Certificate</a></p>
+                            <img src="img/logos/kth_logo.png" style="margin-top:10px;margin-bottom:10px;">
+                            <p class="text-muted text-small" style="margin-top: 0px;">KTH, Stockholm, Sweden</p>
+                            <p class="text-tiny">08/2014 - 11/2016</p>
+                            <p class="text-muted text-small">Major in Digital Media Technology, Web Services</p>
+                            <p class="text-muted text-small">Minor in Innovation and Entrepreneurship</p>
+                            <p class="text-muted text-small">Excellent Academic Resutls</p>
+                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/KTH_degree_certifcate.pdf">Degree's Certificate </a></p>
+                            <hr>
+                            <h4>BSc (Hons) Information Systems</h4>
+                            <img src="img/logos/soc_logo.png">
+                            <p class="text-muted text-small">National University of Singapore</p>
+                            <p class="text-tiny">07/2007 - 02/2012</p>
+                            <p class="text-muted text-small">Specialized in Service Science, Management and Engineering</p>
+                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Deans_List.pdf">Dean's List Award for Academic Excellence</a>, Semester I, AY2011-2012</p>
+                            <p class="text-muted text-small">Language Immersion Scholarship to learn German in Freiburg, Switzerland, Summer 2008</p>
+                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/NUS_degree_certifcate.pdf">Degree's Certificate</a></p>
+                            <hr>
+                            <h4>Exchange Studies</h4>
+                            <img class="img-small" src="img/logos/delft.png">
+                            <p class="text-muted text-small">Delft University of Technology, the Netherlands</p>
+                            <p class="text-tiny">08/2010 - 01/2011</p>
+                            <img style="height:20px; margin-top: 10px" src="img/logos/eth_short.gif">
+                            <p class="text-muted text-small">ETH Zurich, Switzerland</p>
+                            <p class="text-tiny">02/2010 - 08/2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-cogs wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Technical Skills</h3>
+                        <div class="content">
+                            <hr />
+                            <h4>Programming Languages</h4>
+                            <p class="text-muted text-small">JavaScript</p>
+                            <p class="text-muted text-small">Python</p>
+                            <p class="text-muted text-small">Java, C#</p>
+                            <hr/>
+                            <h4>Web Libraries/Frameworks</h4>
+                            <p class="text-muted text-small">NodeJS, ExpressJS, HapiJS</p>
+                            <p class="text-muted text-small">React, Redux, Reflux</p>
+                            <p class="text-muted text-small">Django, Django Rest Framework</p>
+                            <p class="text-muted text-small">AngularJS, MEAN Stack</p>
+                            <p class="text-muted text-small">jQuery, Bootstrap</p>
+                            <p class="text-muted text-small">CSS, SCSS, SASS</p>
+                            <hr />
+                            <h4>Build Tools</h4>
+                            <p class="text-muted text-small">Gulp, Webpack</p>
+                            <hr />
+                            <h4>Databases</h4>
+                            <p class="text-muted text-small">Postgres</p>
+                            <p class="text-muted text-small">MongoDB, CouchDB, FireBase</p>
+                            <p class="text-muted text-small">MySQL, sqlite, MSSQL</p>
+                            <hr />
+                            <h4>Graphics and Visualization</h4>
+                            <p class="text-muted text-small">Three.js, D3.js, Charts.js</p>
+                            <hr />
+                            <h4>Design Tools</h4>
+                            <p class="text-muted text-small">Adobe Photoshop, Adobe <Illustrator></Illustrator></p>
+                            <p class="text-muted text-small">Blender</p>
+                            <hr />
+                            <h4>Management Tools</h4>
+                            <p class="text-muted text-small">Git, Jira, Asana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-6 text-center"  style="margin-top: 40px;">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Made with Passion</h3>
+                        <div class="content">
+                            <hr>
+                            <p class="text-muted text-small">Learning a new programming language, a new library or a new framework is not hard but mastering them is challenging. It requires a lot of hard work, passion and perseverance</p>
+                            <p class="text-muted text-small">Lots of frustration but it is fun when you figure out how to do things and how to do those things well ;)</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -432,7 +572,7 @@
                             We envision that reading for children can be as much fun as playing games
                             by offering them unlimited access to our library and incorporating games and gamification features into their reading experiences.
                         </p>
-                        
+
                         <hr class="light">
                         <p><a href="https://goo.gl/1g07ey" target="_blank">Business Model</a></p>
 
@@ -507,7 +647,6 @@
                         <p>Screenshots</p>
                         <img src="img/screenshots/kth_statue.jpg">
                         <img src="img/screenshots/kth_3d.jpg">
-
                     </div>
                 </div>
                 <br>
@@ -563,7 +702,6 @@
                             <p><a href="http://thuy616.github.io/oildatavis" target="_blank">Demo</a></p>
                             <hr class="light">
                             <p><a href="https://goo.gl/9oja4U" target="_blank">Course Report</a></p>
-
                         </div>
                     </div>
                 <br>
@@ -639,126 +777,6 @@
         </div>
     </section>
 
-    <section id="resume">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My Resume</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
-                        <h3>Experience</h3>
-                        <div class="content">
-                            <hr>
-                            <h4>Full-stack Developer Trainee</h4>
-                            <img src="img/logos/idt_logo.png">
-                            <p class="text-muted text-small">IDT Messaging Oy, Helsinki, Finland</p>
-                            <p class="text-muted text-tiny">10/2015 - now</p>
-                            <p class="text-muted text-small">Research for Master Thesis on Server-side Communications between Microservices - Benchmarking Protocol Buffers vs. Apache Thrift vs. Avro vs. MsgPack</p>
-                            <p class="text-muted text-small">Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
-                            <p class="text-muted text-small">Edit and style the company's website using WordPress </p>
-                            <hr>
-                            <h4>C# Software Engineer</h4>
-                            <img src="img/logos/yokogawa_logo.gif">
-                            <p class="text-muted text-small">Yokogawa International Electric, Singapore</p>
-                            <p class="text-muted text-tiny">05/2012 - 07/2014</p>
-                            <p class="text-muted text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.</p>
-                            <p class="text-muted text-small">Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework</p>
-                            <p class="text-muted text-small">Designed database-schemas and XML schemas for data models</p>
-                            <p class="text-muted text-small">Transformed high-level specifications into detailed technical designs with UML diagrams</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Education</h3>
-                        <div class="content">
-                            <hr>
-                            <h4>MSc (Double Degree) ICT Innovation</h4>
-                            <img src="img/logos/aalto_logo.png">
-                            <img src="img/logos/kth_logo.png">
-                            <p class="text-muted text-small">Aalto University, Helsinki, Finland</p>
-                            <p class="text-muted text-small" style="margin-top: 0px;">KTH, Stockholm, Sweden</p>
-                            <p class="text-tiny">08/2014 - now</p>
-                            <p class="text-muted text-small">Major in Digital Media Technology, Hypermedia</p>
-                            <p class="text-muted text-small">Minor in Innovation and Entrepreneurship</p>
-                            <p class="text-muted text-small">Excellent Academic <a href="https://goo.gl/a6DxoC">Results</a></p>
-                            <hr>
-                            <h4>BSc (Hons) Information Systems</h4>
-                            <img src="img/logos/soc_logo.png">
-                            <p class="text-muted text-small">National University of Singapore</p>
-                            <p class="text-tiny">07/2007 - 02/2012</p>
-                            <p class="text-muted text-small">Specialized in Service Science, Management and Engineering</p>
-                            <p class="text-muted text-small">Dean's List Award for Academic Excellence, Semester I, AY2011-2012</p>
-                            <p class="text-muted text-small">Language Immersion Scholarship to learn German in Freiburg, Switzerland, Summer 2008</p>
-                            <hr>
-                            <h4>Exchange Studies</h4>
-                            <img class="img-small" src="img/logos/delft.png">
-                            <img style="height: 20px; margin-top: 10px" src="img/logos/eth_short.gif">
-                            <p class="text-muted text-small">Delft University of Technology, the Netherlands</p>
-                            <p class="text-tiny">08/2010 - 01/2011</p>
-                            <p class="text-muted text-small">ETH Zurich, Switzerland</p>
-                            <p class="text-tiny">02/2010 - 08/2010</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-cogs wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Technical Skills</h3>
-                        <div class="content">
-                            <hr>
-                            <h4>Programming Languages</h4>
-                            <p class="text-muted text-small">Java, Python, C#</p>
-                            <p class="text-muted text-small">Javascript, Xtend</p>
-                            <hr>
-                            <h4>Web Libraries/Frameworks</h4>
-                            <p class="text-muted text-small">NodeJS, AngularJS, MEAN Stack</p>
-                            <p class="text-muted text-small">Django, Django Rest Framework</p>
-                            <p class="text-muted text-small">ReactJS, Flux, ReactFire</p>
-                            <p class="text-muted text-small">jQuery, Bootstrap</p>
-                            <p class="text-muted text-small">Gulp.js, Grunt, Bower</p>
-                            <p class="text-muted text-small">CSS, SCSS</p>
-                            <hr>
-                            <h4>Databases</h4>
-                            <p class="text-muted text-small">MongoDB, CouchDB, FireBase</p>
-                            <p class="text-muted text-small">MySQL, sqlite, MSSQL</p>
-                            <hr>
-                            <h4>Graphics and Visualization</h4>
-                            <p class="text-muted text-small">Three.js, D3.js, Charts.js</p>
-                            <hr>
-                            <h4>Design Tools</h4>
-                            <p class="text-muted text-small">Adobe Photoshop, Adobe <Illustrator></Illustrator></p>
-                            <p class="text-muted text-small">Blender</p>
-                            <hr>
-                            <h4>Management Tools</h4>
-                            <p class="text-muted text-small">Git, Jira, Scrum</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 col-md-6 text-center"  style="margin-top: 40px;">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Passion</h3>
-                        <div class="content">
-                            <hr>
-                            <p class="text-muted text-small">Learning a new programming language, a new library or a new framework is not hard but mastering them is challenging. It requires a lot of hard work, passion and perseverance</p>
-                            <p class="text-muted text-small">Lots of frustration but it is fun when you figure out how to do things and how to do those things well ;)</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -769,7 +787,7 @@
                 </div>
                 <div class="col-lg-3 text-center">
                     <i class="fa fa-mobile fa-3x wow bounceIn"></i>
-                    <p>+358 46 5649427</p>
+                    <p>+1 (415) 910 3392</p>
                 </div>
                 <div class="col-lg-3 text-center">
                     <i class="fa fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i>
@@ -777,11 +795,11 @@
                 </div>
                 <div class="col-lg-3 text-center">
                     <i class="fa fa-linkedin-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="https://fi.linkedin.com/in/nthuy">linkedin.com/in/nthuy</a></p>
+                    <p><a target="_blank" href="https://fi.linkedin.com/in/nthuy">linkedin.com/in/nthuy</a></p>
                 </div>
                 <div class="col-lg-3 text-center">
                     <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="http://www.github.com/thuy616">thuy616</a></p>
+                    <p><a target="_blank" href="http://www.github.com/thuy616">thuy616</a></p>
                 </div>
             </div>
         </div>
