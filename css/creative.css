@@ -181,12 +181,16 @@ header {
     height: 100%;
     text-align: center;
     color: #fff;
-    background: url('../img/cover1.jpg');
+    background-image: url('../img/cover1.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header .header-content {
