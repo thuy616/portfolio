@@ -44,8 +44,8 @@
 
     $(".header-content-inner p").fitText(
         2, {
-            minFontSize: '14px',
-            maxFontSize: '18px'
+            minFontSize: '12px',
+            maxFontSize: '14px'
         }
     )
 
