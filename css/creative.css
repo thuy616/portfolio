@@ -543,10 +543,10 @@ p.text-small {
 }
 
 .btn-circle {
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   margin-top: 15px;
-  padding: 7px 19px;
+  padding: 0 12px;
   border: 2px solid rgba(255,255,255,.85);
   border-radius: 50% !important;
   font-size: 40px;
@@ -641,4 +641,22 @@ p.text-small {
   .wrapper {
     width: 100%;
   }
+}
+
+.parallax {
+  height: 60%;
+  background-image: url('../img/footer.jpg');
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax > .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 }
