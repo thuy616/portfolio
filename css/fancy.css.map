@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,OAAQ;EACN,UAAU,EAAE,MAAM;;AAGpB,MAAO;EACL,UAAU,EAAE,OAAO",
+"sources": ["../sass/_fancyoverlay.scss"],
+"names": [],
+"file": "fancy.css"
+}
