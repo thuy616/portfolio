@@ -1,5 +1,24 @@
 .resume-wrapper {
-
+  margin: 0 !important;
+  background-image: url('../img/resume/resume-bg-2.jpg');
+  min-height: 600px;
+  width: 100%;
+  opacity: 0.9;
+  .resume-content {
+    min-height: 600px;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, 0.5);
+    .overlay {
+      height: 100%;
+      padding: 15px;
+      &:hover {
+        
+      }
+    }
+  }
 }
 
 .hidden {
@@ -12,4 +31,12 @@
 
 .block-open {
 
+}
+
+.text-white {
+  color: #fff;
+}
+
+.mt-lg {
+  margin-top: 30px;
 }
