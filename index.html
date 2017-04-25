@@ -99,17 +99,18 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-offset-3 col-lg-6 text-center">
+                <div class="col-sm-offset-1 col-sm-10 col-xs-12 text-center">
                     <h2 class="section-heading">About Me</h2>
-                    <hr class="light">
-                    <p class="text-faded text-light">
+                    <p class="text-faded text-light" style="font-size:14px;margin-top:20px">
                         I enjoy exploring new technologies and have an appreciation for simple design.<br/>
                         I had worked in a large, structured organization as well as small startups. That gave me a strong understanding of what fits me. Being in a high-energy fast-paced environment is essential for me to thrive and be happy.
-                    </p>
-                    <p class="text-faded text-light">I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.</p>
-                    <p class="text-faded text-light">Having lived in Vietnam, Singapore, Switzerland, the Netherlands, Sweden, Finland, and now in the U.S., I gain deep insights into different cultures and working styles. I understand people with different backgrounds and am able to
-                        adapt myself to work effectively in culturally diverse teams.</p>
-                    <p class="text-faded text-light">I am currently working in San Francisco, as a Software Engineer Trainee at <a href="https://www.detour.com">Detour.com</a>.</p>
+                    <br/><br/>
+                    I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.
+                    <br/><br/>
+                    Having lived in Vietnam, Singapore, Switzerland, the Netherlands, Sweden, Finland, and now in the U.S., I gain deep insights into different cultures and working styles. I understand people with different backgrounds and am able to
+                    adapt myself to work effectively in culturally diverse teams.
+                    <br/><br/>
+                    I am currently working in San Francisco, as a Software Engineer Trainee at <a href="https://www.detour.com">Detour.com</a>.</p>
                 </div>
                 <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#portfolio" class="btn btn-default btn-xl">My Projects</a>
@@ -121,13 +122,12 @@
     <section class="no-padding" id="portfolio">
         <div class="row" style="padding-bottom: 50px">
           <div class="text-center" style="margin-top: 40px;">
-              <div class="service-box">
+              <div class="passion-box">
                   <i class="fa fa-4x fa-heart wow bounceIn passion" data-wow-delay=".3s"></i>
                   <h3>Made with Passion</h3>
-                  <div class="content">
-                      <hr>
-                      <p class="text-muted text-small">Learning a new programming language, a new library or a new framework is not hard but mastering them is challenging. It requires a lot of hard work, passion and perseverance</p>
-                      <p class="text-muted text-small">Lots of frustration but it is fun when you figure out how to do things and how to do those things well ;)</p>
+                  <div class="row">
+                    <p class="text-muted text-small">Learning a new programming language, a new library or a new framework is not hard but mastering them is challenging. It requires a lot of hard work, passion and perseverance</p>
+                    <p class="text-muted text-small">Lots of frustration but it is fun when you figure out how to do things and how to do those things well ;)</p>
                   </div>
               </div>
           </div>
@@ -657,58 +657,68 @@
       </div>
       <div class="container">
         <div class="row resume-wrapper">
-          <div id="experience" class="resume-content col-lg-4 col-md-4">
-            <div class="overlay">
-              <a id="experienceOpener" href="#"></a>
-              <h4 class="text-light text-white mt-lg">EXPERIENCE</h4>
-              <div style="display:block;margin-top:20px">
-                  <a href="#" class="btn-circle">
-                      <i class="fa fa-1x fa-plus"></i>
-                  </a>
+          <div id="experience" class="resume-block-base resume-block">
+            <div id="experience-overlay" class="overlay">
+              <div class="overlay-content-open">
+                <a href="#"></a>
+                <h4 class="overlay-heading text-light text-white mt-lg">EXPERIENCE</h4>
+                <i class="icon fa fa-4x fa-briefcase text-primary"></i>
+                <div style="display:block;margin-top:20px">
+                    <a href="#" class="btn-circle">
+                        <i class="fa fa-1x fa-plus"></i>
+                    </a>
+                </div>
+              </div>
+              <div class="overlay-content-collapsed">
+                <h5 class="vertical-text">EXPERIENCE</h5>
               </div>
             </div>
-            <div class="service-box text-center hidden">
-                <i class="fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
-                <h3>Experience</h3>
+            <div class="service-box text-center">
+                <!-- <i class="fa fa-4x fa-briefcase wow bounceIn text-primary"></i> -->
+                <!-- <h3>Experience</h3> -->
                 <div class="content">
-                    <hr>
                     <h4>Web Software Engineer Trainee</h4>
-                    <img src="img/logos/detour_logo.png">
-                    <p class="text-muted text-small"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.</p>
-                    <p class="text-muted text-tiny">07/2016 - now</p>
-                    <p class="text-muted text-small">Build from scratch a Content Management Platform - Decentral - an isomorphic Web app which uses React Redux and Hapi server.</p>
-                    <p class="text-muted text-small">Maintain existing Websites and Admin panels.</p>
-                    <p class="text-muted text-small">Implement endpoints of the NodeJS API to support Web features.</p>
+                    <!-- <img src="img/logos/detour_logo.png"> -->
+                    <p class="text-small"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.<br/>
+                    07/2016 - now</p>
+                    <p class="text-small">Build from scratch a Content Management Platform - Decentral - an isomorphic Web app which uses React Redux and Hapi server.<br/>
+                    Maintain existing Websites and Admin panels.<br/>
+                    Implement endpoints of the NodeJS API to support Web features.</p>
                     <hr>
                     <h4>Java Software Engineer</h4>
-                    <img src="img/logos/idt_logo.png">
-                    <p class="text-muted text-small"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland</p>
-                    <p class="text-muted text-tiny">10/2015 - 05/2016</p>
-                    <p class="text-muted text-small">Research for Master Thesis on Microservices Communication - Benchmarking gRPC vs. Apache Thrift vs. Avro</p>
-                    <p class="text-muted text-small">Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
+                    <!-- <img src="img/logos/idt_logo.png"> -->
+                    <p class="text-small"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland<br/>
+                    10/2015 - 05/2016</p>
+                    <p class="text-small">Research for Master Thesis on Microservices Communication - Benchmarking gRPC vs. Apache Thrift vs. Avro<br/>
+                    Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
                     <hr>
                     <h4>C# Software Engineer</h4>
-                    <img src="img/logos/yokogawa_logo.gif">
-                    <p class="text-muted text-small"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore</p>
-                    <p class="text-muted text-tiny">05/2012 - 07/2014</p>
-                    <p class="text-muted text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.</p>
-                    <p class="text-muted text-small">Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework</p>
-                    <p class="text-muted text-small">Designed database-schemas and XML schemas for data models</p>
-                    <p class="text-muted text-small">Transformed high-level specifications into detailed technical designs with UML diagrams</p>
+                    <!-- <img src="img/logos/yokogawa_logo.gif"> -->
+                    <p class="text-small"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore<br/>
+                    05/2012 - 07/2014</p>
+                    <p class="text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.<br/>
+                    Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework<br/>
+                    Designed database-schemas and XML schemas for data models<br/>
+                    Transformed high-level specifications into detailed technical designs with UML diagrams</p>
                 </div>
             </div>
           </div>
-          <div id="education" class="resume-content col-lg-4 col-md-4">
+          <div id="education" class="resume-block-base resume-block">
             <div class="overlay">
-              <a href="#"></a>
-              <h4 class="text-light text-white mt-lg">EDUCATION</h4>
-              <div style="display:block;margin-top:20px">
-                  <a href="#" class="btn-circle">
-                      <i class="fa fa-1x fa-plus"></i>
-                  </a>
+              <div class="overlay-content-open">
+                <a href="#"></a>
+                <h4 class="overlay-heading text-light text-white mt-lg">EDUCATION</h4>
+                <div style="display:block;margin-top:20px">
+                    <a href="#" class="btn-circle">
+                        <i class="fa fa-1x fa-plus"></i>
+                    </a>
+                </div>
+              </div>
+              <div class="overlay-content-collapsed">
+                <h5 class="vertical-text">EDUCATION</h5>
               </div>
             </div>
-            <div class="service-box text-center hidden">
+            <div class="service-box text-center">
                 <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".1s"></i>
                 <h3>Education</h3>
                 <div class="content">
@@ -747,17 +757,22 @@
                 </div>
             </div>
           </div>
-          <div id="skills" class="resume-content col-lg-4 col-md-4">
+          <div id="skills" class="resume-block-base resume-block">
             <div class="overlay">
-              <a href="#"></a>
-              <h4 class="text-light text-white mt-lg">TECHNICAL SKILLS</h4>
-              <div style="display:block;margin-top:20px">
-                  <a href="#" class="btn-circle">
-                      <i class="fa fa-1x fa-plus"></i>
-                  </a>
+              <div class="overlay-content-open">
+                <a href="#"></a>
+                <h4 class="overlay-heading text-light text-white mt-lg">TECHNICAL SKILLS</h4>
+                <div style="display:block;margin-top:20px">
+                    <a href="#" class="btn-circle">
+                        <i class="fa fa-1x fa-plus"></i>
+                    </a>
+                </div>
+              </div>
+              <div class="overlay-content-collapsed">
+                <h5 class="vertical-text">SKILLS</h5>
               </div>
             </div>
-            <div class="service-box text-center hidden">
+            <div class="service-box text-center">
                 <i class="fa fa-4x fa-cogs wow bounceIn text-primary" data-wow-delay=".2s"></i>
                 <h3>Technical Skills</h3>
                 <div class="content">
@@ -975,6 +990,26 @@
     <script src="js/creative.js"></script>
 
     <script>
+
+      $('#experience-overlay').click(function() {
+        console.log('clicked!');
+        $('#experience').removeClass('resume-block');
+        $("#experience").addClass('resume-block-open');
+        $("#education").removeClass('resume-block');
+        $('#education').addClass('resume-block-collapsed');
+        $("#skills").removeClass('resume-block');
+        $('#skills').addClass('resume-block-collapsed');
+        //collapse education and technical skills blocks
+        // remove resume-block class
+        // add resume-block-open class
+      });
+      $('#education-overlay').click(function() {
+        console.log("open education");
+      });
+      $('#skills-overlay').click(function() {
+        console.log('open skills');
+      });
+      // from open to normal
 
     </script>
 </body>

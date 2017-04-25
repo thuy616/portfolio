@@ -1,19 +1,92 @@
+.overlay-content-collapsed {
+  visibility: hidden; }
+
+.overlay-content-open {
+  visibility: visible; }
+  .overlay-content-open .overlay-heading {
+    transition: font-size 0.85s ease;
+    font-size: inherit; }
+
+.overlay {
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.15); }
+  .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer; }
+    .overlay:hover .overlay-heading {
+      font-size: 20px; }
+    .overlay:hover .icon {
+      display: inline-block;
+      opacity: 1; }
+
 .resume-wrapper {
   margin: 0 !important;
   background-image: url("../img/resume/resume-bg-2.jpg");
-  min-height: 600px;
+  min-height: 680px;
   width: 100%;
-  opacity: 0.9; }
-  .resume-wrapper .resume-content {
-    min-height: 600px;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out; }
+  .resume-wrapper .resume-block-base {
+    float: left;
+    position: relative;
     padding: 0;
+    display: inline-block;
+    min-height: 680px;
     border-style: solid;
     border-width: 1px;
     border-color: transparent;
-    border-right-color: rgba(255, 255, 255, 0.5); }
-    .resume-wrapper .resume-content .overlay {
-      height: 100%;
-      padding: 15px; }
+    border-right-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    overflow: scroll; }
+  .resume-wrapper .resume-block {
+    width: 33.33333333%; }
+    .resume-wrapper .resume-block .service-box {
+      display: none; }
+    .resume-wrapper .resume-block .overlay .icon {
+      transition: opacity 0.5s ease-in-out;
+      display: none;
+      opacity: 0; }
+  .resume-wrapper .resume-block-open {
+    transition: all 0.3s ease-in-out;
+    width: 80%; }
+    .resume-wrapper .resume-block-open .overlay {
+      display: none; }
+    .resume-wrapper .resume-block-open .service-box {
+      display: block; }
+  .resume-wrapper .resume-block-collapsed {
+    width: 10%; }
+    .resume-wrapper .resume-block-collapsed .service-box {
+      display: none; }
+    .resume-wrapper .resume-block-collapsed .overlay-content-open {
+      display: none; }
+    .resume-wrapper .resume-block-collapsed .overlay-content-collapsed {
+      visibility: visible; }
+
+.service-box {
+  transition: all 0.3s ease-in-out;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 20px 20px; }
+  .service-box h1, .service-box h2, .service-box h3, .service-box h4, .service-box h5 {
+    color: #fff !important;
+    font-weight: 300; }
+  .service-box p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 300 !important; }
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  color: #fff;
+  margin-left: 30px; }
 
 .hidden {
   visibility: hidden; }

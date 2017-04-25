@@ -16,8 +16,9 @@
     "url": "https://github.com/thuy616/portfolio/issues"
   },
   "homepage": "https://github.com/thuy616/portfolio#readme",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
