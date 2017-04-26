@@ -144,11 +144,6 @@ header {
     background-image: url('../img/cover@2x.jpg');
   }
 }
-@media(min-width: 1200px) {
-  header {
-    background-image: url('../img/cover@3x.jpg');
-  }
-}
 header .header-content {
   position: absolute;
   top: 30%;
