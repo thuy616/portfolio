@@ -369,12 +369,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222;
 }
-p.text-tiny {
+.text-tiny {
   color: inherit;
-  font-size: 12px;
+  font-size: 12px !important;
 }
-p.text-small {
-  font-size: 12px;
+.text-small {
+  font-size: 12px !important;
   line-height: 2em;
   margin-top: 5px;
 }

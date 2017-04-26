@@ -98,28 +98,23 @@
 
     <section class="bg-primary" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-10 col-xs-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                    <p class="text-faded text-light" style="font-size:14px;margin-top:20px">
-                        I enjoy exploring new technologies and have an appreciation for simple design.<br/>
-                        I had worked in a large, structured organization as well as small startups. That gave me a strong understanding of what fits me. Being in a high-energy fast-paced environment is essential for me to thrive and be happy.
-                    <br/><br/>
-                    I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.
-                    <br/><br/>
-                    Having lived in Vietnam, Singapore, Switzerland, the Netherlands, Sweden, Finland, and now in the U.S., I gain deep insights into different cultures and working styles. I understand people with different backgrounds and am able to
-                    adapt myself to work effectively in culturally diverse teams.
-                    <br/><br/>
-                    I am currently working in San Francisco, as a Software Engineer Trainee at <a href="https://www.detour.com">Detour.com</a>.</p>
-                </div>
-                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#portfolio" class="btn btn-default btn-xl">My Projects</a>
-                </div> -->
+            <div class="row text-center">
+              <h2 class="section-heading">About Me</h2>
+              <p class="text-faded text-light me-desc">
+                  I enjoy exploring new technologies and have an appreciation for simple design.<br/>
+                  I had worked in a large, structured organization as well as small startups. That gave me a strong understanding of what fits me. Being in a high-energy fast-paced environment is essential for me to thrive and be happy.
+              <br/><br/>
+              I love to write beautiful code and make visually stunning Web applications. Beautiful code to me is the combination of clarity, transparency, efficiency, and scalability.
+              <br/><br/>
+              Having lived in Vietnam, Singapore, Switzerland, the Netherlands, Sweden, Finland, and now in the U.S., I gain deep insights into different cultures and working styles. I understand people with different backgrounds and am able to
+              adapt myself to work effectively in culturally diverse teams.
+              <br/><br/>
+              I am currently working in San Francisco, as a Software Engineer Trainee at <a href="https://www.detour.com">Detour.com</a>.</p>
             </div>
         </div>
     </section>
 
-    <section class="container" id="portfolio">
+    <section class="container pb-0" id="portfolio">
         <div class="row" style="padding-bottom: 50px">
           <div class="text-center" style="margin-top: 40px;">
               <div class="passion-box">
@@ -646,19 +641,18 @@
         </div>
     </section>
 
-    <section class="hidden-xs hidden-sm">
+    <section class="pb-0">
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section-heading">Resume</h2>
-                  <hr class="primary">
               </div>
           </div>
       </div>
       <div class="container">
         <div class="row resume-wrapper">
-          <div id="experience" class="resume-block-base resume-block">
-            <div href="#" id="experience-overlay" class="overlay">
+          <div class="resume-block-base resume-block">
+            <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">EXPERIENCE</h4>
                 <i class="icon fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
@@ -668,26 +662,27 @@
               </div>
             </div>
             <div class="service-box text-center">
-                <div class="content">
+                <div class="content abs-center">
                     <h4>Web Software Engineer Trainee</h4>
-                    <!-- <img src="img/logos/detour_logo.png"> -->
-                    <p class="text-small"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.<br/>
-                    07/2016 - now</p>
-                    <p class="text-small">Build from scratch a Content Management Platform - Decentral - an isomorphic Web app which uses React Redux and Hapi server.<br/>
-                    Maintain existing Websites and Admin panels.<br/>
+                    <img src="img/logos/detour_logo.png">
+                    <p class="text-bigger"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.</p>
+                    <p class="text-tiny">07/2016 - now</p>
+                    <p class="text-small">Build from scratch a Content Management Platform - <a href-"https://decentral.descript.com">Decentral</a> - an isomorphic Web app which uses React Redux and Hapi server.<br/>
+                    Maintain existing Websites and CMS apps, including <a href="https://www.detour.com">detour.com</a>, <a href="https://platform.detour.com">platform</a>, <a href="https://www.descript.com">descript</a>,
+                    <a href="https://admin.detour.com">Admin app</a>, <a href="https://activities.detour.com">Activities app</a><br/>
                     Implement endpoints of the NodeJS API to support Web features.</p>
                     <hr>
                     <h4>Java Software Engineer</h4>
-                    <!-- <img src="img/logos/idt_logo.png"> -->
-                    <p class="text-small"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland<br/>
-                    10/2015 - 05/2016</p>
+                    <img src="img/logos/idt_logo.png">
+                    <p class="text-bigger"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland</p>
+                    <p class="text-tiny">10/2015 - 05/2016</p>
                     <p class="text-small">Research for Master Thesis on Microservices Communication - Benchmarking gRPC vs. Apache Thrift vs. Avro<br/>
                     Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
                     <hr>
                     <h4>C# Software Engineer</h4>
-                    <!-- <img src="img/logos/yokogawa_logo.gif"> -->
-                    <p class="text-small"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore<br/>
-                    05/2012 - 07/2014</p>
+                    <img src="img/logos/yokogawa_logo.gif">
+                    <p class="text-bigger"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore</p>
+                    <p class="text-tiny">05/2012 - 07/2014</p>
                     <p class="text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.<br/>
                     Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework<br/>
                     Designed database-schemas and XML schemas for data models<br/>
@@ -695,7 +690,7 @@
                 </div>
             </div>
           </div>
-          <div id="education" class="resume-block-base resume-block">
+          <div class="resume-block-base resume-block">
             <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">EDUCATION</h4>
@@ -706,42 +701,48 @@
               </div>
             </div>
             <div class="service-box text-center">
-                <div class="content">
+                <div class="content abs-center ">
                     <h4>MSc (Double Degree) ICT Innovation</h4>
                     <img src="img/logos/aalto_logo.png">
-                    <p class="text-muted text-small">Aalto University, Helsinki, Finland</p>
+                    <p class="text-bigger">Aalto University, Helsinki, Finland</p>
                     <p class="text-tiny">08/2014 - 11/2016</p>
-                    <p class="text-muted text-small">Graduated with Honours</p>
-                    <p class="text-muted text-small"><strong>GPA: 4.64/5.0</strong></p>
-                    <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Aalto_degree_certificate.pdf">Degree's Certificate</a></p>
+                    <p>
+                      Graduated with Honours <br/>
+                      <strong>GPA: 4.64/5.0</strong> <br/>
+                      <a target="_blank" href="http://thuyn.me/others/Aalto_degree_certificate.pdf">Degree's Certificate</a>
+                    </p>
                     <img src="img/logos/kth_logo.png" style="margin-top:10px;margin-bottom:10px;">
-                    <p class="text-muted text-small" style="margin-top: 0px;">KTH, Stockholm, Sweden</p>
+                    <p class="text-bigger">KTH, Stockholm, Sweden</p>
                     <p class="text-tiny">08/2014 - 11/2016</p>
-                    <p class="text-muted text-small">Major in Digital Media Technology, Web Services</p>
-                    <p class="text-muted text-small">Minor in Innovation and Entrepreneurship</p>
-                    <p class="text-muted text-small">Excellent Academic Resutls</p>
-                    <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/KTH_degree_certifcate.pdf">Degree's Certificate </a></p>
+                    <p>
+                      Major in Digital Media Technology, Web Services <br/>
+                      Minor in Innovation and Entrepreneurship <br/>
+                      Excellent Academic Resutls <br/>
+                      <a target="_blank" href="http://thuyn.me/others/KTH_degree_certifcate.pdf">Degree's Certificate </a>
+                    </p>
                     <hr>
                     <h4>BSc (Hons) Information Systems</h4>
                     <img src="img/logos/soc_logo.png">
-                    <p class="text-muted text-small">National University of Singapore</p>
+                    <p class="text-bigger">National University of Singapore</p>
                     <p class="text-tiny">07/2007 - 02/2012</p>
-                    <p class="text-muted text-small">Specialized in Service Science, Management and Engineering</p>
-                    <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Deans_List.pdf">Dean's List Award for Academic Excellence</a>, Semester I, AY2011-2012</p>
-                    <p class="text-muted text-small">Language Immersion Scholarship to learn German in Freiburg, Switzerland, Summer 2008</p>
-                    <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/NUS_degree_certifcate.pdf">Degree's Certificate</a></p>
+                    <p>
+                      Specialized in Service Science, Management and Engineering<br/>
+                      <a target="_blank" href="http://thuyn.me/others/Deans_List.pdf">Dean's List Award for Academic Excellence</a>, Semester I, AY2011-2012<br/>
+                      Language Immersion Scholarship to learn German in Freiburg, Switzerland, Summer 2008<br/>
+                      <a target="_blank" href="http://thuyn.me/others/NUS_degree_certifcate.pdf">Degree's Certificate</a>
+                    </p>
                     <hr>
                     <h4>Exchange Studies</h4>
-                    <img class="img-small" src="img/logos/delft.png">
-                    <p class="text-muted text-small">Delft University of Technology, the Netherlands</p>
+                    <img src="img/logos/delft.png">
+                    <p class="text-bigger">Delft University of Technology, the Netherlands</p>
                     <p class="text-tiny">08/2010 - 01/2011</p>
-                    <img style="height:20px; margin-top: 10px" src="img/logos/eth_short.gif">
-                    <p class="text-muted text-small">ETH Zurich, Switzerland</p>
+                    <img src="img/logos/eth_logo.png">
+                    <p class="text-bigger">ETH Zurich, Switzerland</p>
                     <p class="text-tiny">02/2010 - 08/2010</p>
                 </div>
             </div>
           </div>
-          <div id="skills" class="resume-block-base resume-block">
+          <div class="resume-block-base resume-block">
             <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">TECHNICAL SKILLS</h4>
@@ -752,7 +753,7 @@
               </div>
             </div>
             <div class="service-box text-center">
-                <div class="content">
+                <div class="content abs-center">
                     <h4>Programming Languages</h4>
                     <p>JavaScript, Python, Java, C#</p>
                     <hr/>
@@ -761,7 +762,9 @@
                     <p>Client: jQuery, React, Redux, Reflux, JSX <br/>
                     Django, Django Rest Framework, AngularJS, MEAN Stack</p>
                     <p>Style Sheets: CSS, SASS, LESS</p>
-                    <p>Graphics and Visualizations: ThreeJS, D3, FabricJS, HTML5 Canvas</p>
+                    <hr />
+                    <h4>Graphics and Visualizations</h4>
+                    <p>ThreeJS, D3, FabricJS, HTML5 Canvas</p>
                     <hr />
                     <h4>Build Tools</h4>
                     <p>Webpack, Gulp, Grunt</p>
@@ -964,6 +967,13 @@
         $('.resume-wrapper .resume-block').addClass('resume-block-collapsed').removeClass('resume-block');
         block.addClass('resume-block-open');
       });
+
+      $('.service-box').click(function(event) {
+        console.log('clicked!');
+        var block = $(this).parent();
+        block.removeClass('resume-block-open').addClass('resume-block');
+        $('.resume-wrapper .resume-block-collapsed').addClass('resume-block').removeClass('resume-block-collapsed');
+      })
 
       // from open to normal
 

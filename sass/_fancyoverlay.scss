@@ -1,3 +1,26 @@
+.abs-center {
+  height: 80%;
+  overflow-y: scroll;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.abs-center::-webkit-scrollbar {
+  width: .5em;
+}
+.abs-center::-webkit-scrollbar-track {
+  // -webkit-box-shadow: auto;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background:auto;
+  -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.abs-center::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  // outline: 1px solid slategrey;
+}
 .overlay-content-collapsed {
   visibility: hidden;
 }
@@ -5,17 +28,18 @@
   visibility: visible;
   .overlay-heading {
     @include animate(font-size,0.2s,linear);
-    font-size: 20px;
+    font-size: 16px;
+    @include media(">=tablet") {
+      font-size: 20px;
+    }
   }
 }
 .overlay {
   @include animate(background-color);
   position: relative;
   width: 100%;
-  min-height: 750px;
   height: 100%;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.15);
+  padding: 10px 15px !important;
   &:hover {
     background-color: rgba(0, 0, 0, 0.35);
     cursor: pointer;
@@ -27,33 +51,46 @@
 .resume-wrapper {
   margin: 0 !important;
   background-image: url('../img/resume/resume-bg-2.jpg');
-  min-height: 750px;
-  height: 100%;
+  height: 460px;
   width: 100%;
   opacity: 0.9;
   @include animate(all);
 
+  @include media(">=tablet") {
+    height: 640px;
+    max-height: none;
+  }
+
   .resume-block-base {
-    float: left;
+    vertical-align: top;
     position: relative;
     padding: 0;
     display: inline-block;
-    min-height: 750px;
-    height: 100%;
+    // height: 460px;
+    // height: 100%;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1.5px;
     border-color: transparent;
-    border-right-color: rgba(255, 255, 255, 0.4);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
     background-color: transparent;
     overflow: scroll;
+    @include media(">=tablet") {
+      height: 640px;
+      max-height: none;
+      float: left;
+      border-right-color: rgba(255, 255, 255, 0.4);
+    }
   }
   .resume-block {
-    width: 33.33333333%;
-
+    width: 100%;
+    height: 33.3333333%;
+    @include media (">=tablet") {
+      width: 33.33333333%;
+      height: 100%;
+    }
     .service-box {
       display: none;
     }
-
     .overlay {
       .icon {
         display: block;
@@ -62,20 +99,34 @@
   }
   .resume-block-open {
     @include animate(all);
-    width: 80%;
+    height: 80%;
+    width: 100%;
+    @include media(">=tablet") {
+      width: 80%;
+      height: 100%;
+    }
     .overlay {
       display: none;
     }
     .service-box {
       display: block;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-    &:hover {
-      cursor: pointer;
+      .content {
+        padding: 20px 0;
+        // background-color: rgba(0, 0, 0, 0.2);
+        img {
+          height: 40px;
+          width: auto;
+        }
+      }
     }
   }
   .resume-block-collapsed {
-    width: 10%;
+    height: 10%;
+    width: 100%;
+    @include media(">=tablet") {
+      width: 10%;
+      height: 100%;
+    }
     .service-box {
       display: none;
     }
@@ -90,33 +141,43 @@
 
 .service-box {
   @include animate(all);
-  min-height: 750px;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.15);
-  margin: 0;
-  padding: 20px 20px;
+  background-color: rgba(0,0,0,0.35);
+  margin: 0 !important;
+  padding: 20px 30px;
+  @include media(">=tablet") {
+    height: 640px;
+    max-height: none;
+  }
   h4 {
     color: #fff !important;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
   }
   p {
-    color: #fff !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: 300 !important;
     font-size: 14px;
     padding: 0 30px;
+    margin: 5px 0;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
 .vertical-text {
-	transform: rotate(90deg);
-	transform-origin: left top 0;
   color: #fff;
-  margin-left: 30px;
+  @include media(">=tablet") {
+    transform: rotate(90deg);
+  	transform-origin: left top 0;
+    margin-left: 30px;
+  }
 }
 
 .hidden {
@@ -138,9 +199,17 @@
 .mt-lg {
   margin-top: 30px;
 }
-
-.hidden-sm {
-  @include media("<tablet") {
-    display: none;
-  }
+.text-tiny {
+  font-size: 12px !important;
+}
+.text-bigger {
+  font-size: 16px !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.me-desc {
+  max-width: 620px;
+  margin: 30px auto;
+  font-size: 14px;
 }
