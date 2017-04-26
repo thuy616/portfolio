@@ -57,7 +57,7 @@
 }
 .resume-wrapper {
   margin: 0 !important;
-  background-image: url('../img/resume/resume-bg-2.jpg');
+  background-image: url('../img/resume/resume-bg-6.jpg');
   background-position: center;
   background-size: auto 500px;
   height: 500px;
@@ -224,30 +224,31 @@
 }
 .me-desc {
   max-width: 620px;
-  margin: 30px auto;
+  margin: 30px;
   font-size: 14px;
 }
 .project-category {
   font-weight: 300 !important;
 }
 .bg-blue {
-  background-color: #2174e0;
+  background: linear-gradient(top, #2174e0, #134586);
+  background: -webkit-linear-gradient(top, #2174e0, #134586);
 }
 .bg-hot-pink {
-  background: -webkit-linear-gradient(top, #db4a7d, #ac2b58);
-  background: linear-gradient(top, #db4a7d, #ac2b58);
+  background: -webkit-linear-gradient(top, #e23a7b, #af0848);
+  background: linear-gradient(top, #e23a7b, #af0848);
 }
 .bg-shamrock {
-  background-color: -webkit-linear-gradient(top, #1ad3bf, #11c36d);
-  background-color: linear-gradient(top, #1ad3bf, #11c36d);
+  background: -webkit-linear-gradient(top, #1ad3bf, #11c36d);
+  background: linear-gradient(top, #1ad3bf, #11c36d);
   p {
     color: #fff;
     font-weight: 300;
   }
 }
 .bg-yellow {
-    background: -webkit-linear-gradient(top, #fbe659, #f7a10c);
-    background: linear-gradient(top, #fbe659, #f7a10c);
+    background: -webkit-linear-gradient(top, #F5D76E, #f7a10c);
+    background: linear-gradient(top, #F5D76E, #f7a10c);
 }
 .text-primary-light {
   color: #a0a0a0;
@@ -260,8 +261,18 @@
 .contact {
   .contact-block {
     height: 100px;
-    i {
+    a {
       display: block;
+      color: #fff !important;
     }
   }
+}
+.header-img {
+  background-image: url('../img/cover-colors.jpg') !important;
+  @include media(">=tablet") {
+    background-image: url('../img/cover-colors@2x.jpg') !important;
+  }
+  // .header-content {
+  //   top: 60% !important;
+  // }
 }
