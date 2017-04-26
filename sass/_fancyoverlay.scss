@@ -4,33 +4,31 @@
 .overlay-content-open {
   visibility: visible;
   .overlay-heading {
-    @include animate(font-size,0.85s,ease);
-    font-size: inherit;
+    @include animate(font-size,0.2s,linear);
+    font-size: 20px;
   }
 }
 .overlay {
   @include animate(background-color);
   position: relative;
   width: 100%;
-  min-height: 680px;
+  min-height: 750px;
+  height: 100%;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.15);
   &:hover {
     background-color: rgba(0, 0, 0, 0.35);
     cursor: pointer;
     .overlay-heading {
-      font-size: 20px;
-    }
-    .icon {
-      display: inline-block;
-      opacity: 1;
+      font-size: 28px;
     }
   }
 }
 .resume-wrapper {
   margin: 0 !important;
   background-image: url('../img/resume/resume-bg-2.jpg');
-  min-height: 680px;
+  min-height: 750px;
+  height: 100%;
   width: 100%;
   opacity: 0.9;
   @include animate(all);
@@ -40,11 +38,12 @@
     position: relative;
     padding: 0;
     display: inline-block;
-    min-height: 680px;
+    min-height: 750px;
+    height: 100%;
     border-style: solid;
     border-width: 1px;
     border-color: transparent;
-    border-right-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.4);
     background-color: transparent;
     overflow: scroll;
   }
@@ -57,9 +56,7 @@
 
     .overlay {
       .icon {
-        @include animate(opacity, 0.5s);
-        display: none;
-        opacity: 0;
+        display: block;
       }
     }
   }
@@ -71,7 +68,10 @@
     }
     .service-box {
       display: block;
-
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
   .resume-block-collapsed {
@@ -90,20 +90,25 @@
 
 .service-box {
   @include animate(all);
-  min-height: 680px;
+  min-height: 750px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.15);
   margin: 0;
   padding: 20px 20px;
-  h1, h2, h3, h4, h5 {
+  h4 {
     color: #fff !important;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
   p {
-    color: rgba(255,255,255,0.8) !important;
+    color: #fff !important;
     font-weight: 300 !important;
+    font-size: 14px;
+    padding: 0 30px;
   }
 }
 
@@ -132,4 +137,10 @@
 
 .mt-lg {
   margin-top: 30px;
+}
+
+.hidden-sm {
+  @include media("<tablet") {
+    display: none;
+  }
 }
