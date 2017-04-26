@@ -40,23 +40,32 @@
   width: 100%;
   height: 100%;
   padding: 10px 15px !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  .icon {
+    @include animate(color);
+  }
   &:hover {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
     cursor: pointer;
     .overlay-heading {
       font-size: 28px;
+    }
+    .icon {
+      color: rgba(66, 220, 163, .9);
     }
   }
 }
 .resume-wrapper {
   margin: 0 !important;
   background-image: url('../img/resume/resume-bg-2.jpg');
-  height: 460px;
+  background-position: center;
+  background-size: auto 500px;
+  height: 500px;
   width: 100%;
-  opacity: 0.9;
   @include animate(all);
 
   @include media(">=tablet") {
+    background-size: auto;
     height: 640px;
     max-height: none;
   }
@@ -66,10 +75,10 @@
     position: relative;
     padding: 0;
     display: inline-block;
-    // height: 460px;
+    // height: 500px;
     // height: 100%;
     border-style: solid;
-    border-width: 1.5px;
+    border-width: 1px;
     border-color: transparent;
     border-bottom-color: rgba(255, 255, 255, 0.4);
     background-color: transparent;
@@ -162,9 +171,12 @@
   p {
     color: rgb(255, 255, 255) !important;
     font-weight: 300 !important;
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 30px;
     margin: 5px 0;
+    @include media(">=tablet") {
+      font-size: 14px;
+    }
   }
   &:hover {
     cursor: pointer;
@@ -206,10 +218,50 @@
   font-size: 16px !important;
 }
 .pb-0 {
-  padding-bottom: 0 !important;
+  @include media("<tablet"){
+    padding-bottom: 0;
+  }
 }
 .me-desc {
   max-width: 620px;
   margin: 30px auto;
   font-size: 14px;
+}
+.project-category {
+  font-weight: 300 !important;
+}
+.bg-blue {
+  background-color: #2174e0;
+}
+.bg-hot-pink {
+  background: -webkit-linear-gradient(top, #db4a7d, #ac2b58);
+  background: linear-gradient(top, #db4a7d, #ac2b58);
+}
+.bg-shamrock {
+  background-color: -webkit-linear-gradient(top, #1ad3bf, #11c36d);
+  background-color: linear-gradient(top, #1ad3bf, #11c36d);
+  p {
+    color: #fff;
+    font-weight: 300;
+  }
+}
+.bg-yellow {
+    background: -webkit-linear-gradient(top, #fbe659, #f7a10c);
+    background: linear-gradient(top, #fbe659, #f7a10c);
+}
+.text-primary-light {
+  color: #a0a0a0;
+  padding: 0 20px;
+  font-weight: 300;
+  @include media(">=tablet") {
+    padding: 0 40px;
+  }
+}
+.contact {
+  .contact-block {
+    height: 100px;
+    i {
+      display: block;
+    }
+  }
 }

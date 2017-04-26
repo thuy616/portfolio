@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="My name is Thuy Nguyen. I'm a full-stack developer. I love programming, exploring new technologies and have an appreciation for simple yet visually stunning websites.">
+    <meta name="author" content="THUY NGUYEN">
+    <meta property="og:url"                content="http://thuyn.me" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="THUY NGUYEN - Full stack Developer" />
+    <meta property="og:description"        content="I'm a full-stack developer. I love programming, exploring new technologies and have an appreciation for simple yet visually stunning websites." />
+    <meta property="og:image"              content="http://thuyn.me/img/profile_2_bw.jpg" />
+
 
     <title>THUY NGUYEN - Full stack Developer</title>
 
@@ -82,7 +88,7 @@
 
                 <!-- <h1>Thuy Nguyen</h1>
                 <h2>Full-Stack Developer</h2> -->
-                <img class="img-circle img-thumbnail" style="width:200px;height:200px" src="../img/profile_color.jpg" />
+                <img class="img-circle img-thumbnail" style="width:200px;height:200px" src="../img/profile_2_color.jpg" />
 
                 <p class="text-light">Hello, my name is Thuy. I am a Full-stack Developer.<br/>
                   I enjoy exploring new technologies and have an appreciation for simple yet visually stunning websites.</p>
@@ -96,7 +102,7 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section id="about" class='bg-primary'>
         <div class="container">
             <div class="row text-center">
               <h2 class="section-heading">About Me</h2>
@@ -114,15 +120,15 @@
         </div>
     </section>
 
-    <section class="container pb-0" id="portfolio">
+    <section class="pb-0" id="portfolio">
+      <div class="container">
         <div class="row" style="padding-bottom: 50px">
           <div class="text-center" style="margin-top: 40px;">
               <div class="passion-box">
                   <i class="fa fa-4x fa-heart wow bounceIn passion" data-wow-delay=".3s"></i>
                   <h2>Made with Passion</h2>
                   <div class="row">
-                    <p class="text-muted">Learning a new programming language, a new library or a new framework is not hard but mastering them is challenging. It requires a lot of hard work, passion and perseverance</p>
-                    <p class="text-muted">Lots of frustration but it is fun when you figure out how to do things and how to do those things well ;)</p>
+                    <p class="text-muted">Learning a new programming language, a new library or a new framework is not hard but mastering them and inventing new techniques can be challenging. It requires a lot of hard work, passion and perseverance.</p>
                   </div>
               </div>
           </div>
@@ -130,7 +136,39 @@
         <div class="container-fluid wrapper remodal-bg">
           <div>
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
+              <div class="col-sm-4 col-xs-12">
+                  <a href="#photo_gallery" class="portfolio-box">
+                      <img src="img/portfolio/gallery-cover.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-name">
+                                  My Photo Gallery
+                              </div>
+                              <div class="project-category">
+                                  A React/Redux Photo Gallery
+                              </div>
+
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-4 col-xs-12">
+                  <a href="#hdi_viz" class="portfolio-box">
+                      <img src="img/portfolio/hdi-cover.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-name">
+                                  Exploring HDI Visualization
+                              </div>
+                              <div class="project-category">
+                                  A D3 exploratory visualization of HDI data from the UNDP
+                              </div>
+
+                          </div>
+                      </div>
+                  </a>
+              </div>
+                <div class="col-sm-4 col-xs-12">
                     <a href="#constellations_atlas" class="portfolio-box">
                         <img src="img/portfolio/constellations_atlas.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -138,7 +176,7 @@
                                 <div class="project-name">
                                     Constellation Atlas
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-category">
                                     Virtual simulation of the universe using Three.js
                                 </div>
 
@@ -146,98 +184,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#apps_war" class="portfolio-box">
-                        <img src="img/portfolio/appswar.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Apps War
-                                </div>
-                                <div class="project-category text-faded">
-                                    Top Apps for Android and iOS devices side-by-side
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#imgur" class="portfolio-box">
-                        <img src="img/portfolio/imgur.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    A Sleek Imgur Browser
-                                </div>
-                                <div class="project-category text-faded">
-                                    Imgur Client built with React/Flux
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#bonappetit" class="portfolio-box">
-                        <img src="img/portfolio/bonappetit.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Bon Appetit
-                                </div>
-                                <div class="project-category text-faded">
-                                    A React/Firebase Shopping List
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#kth_3d" class="portfolio-box">
-                        <img src="img/portfolio/kth.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    KTH Courtyard 3D
-                                </div>
-                                <div class="project-category text-faded">
-                                    3D Interactive Walkthrough of KTH Campus
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#estia" class="portfolio-box">
-                        <img src="img/portfolio/estia.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Estia
-                                </div>
-                                <div class="project-category text-faded">
-                                    LEDs Indoor Navigator and Energy Usage Visualization
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#oil_vis" class="portfolio-box">
-                        <img src="img/portfolio/oilvis.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    World Economy through Oil Data
-                                </div>
-                                <div class="project-category text-faded">
-                                    Visualization - Telling Story of Oil Data
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-sm-4 col-xs-12">
                     <a href="#laptops_vis" class="portfolio-box">
                         <img src="img/portfolio/laptops.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -245,29 +192,91 @@
                                 <div class="project-name">
                                     Which Laptop should I buy?
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-category">
                                     Visualization tool to compare laptops
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#libreasy" class="portfolio-box">
-                        <img src="img/portfolio/libreasy.jpg" class="img-responsive" alt="">
+                <div class="col-sm-4 col-xs-12">
+                    <a href="#oil_vis" class="portfolio-box">
+                        <img src="img/portfolio/oilvis.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    LibrEasy
+                                    World Economy through Oil Data
                                 </div>
-                                <div class="project-category text-faded">
-                                    Gamified E-books for Kids
+                                <div class="project-category">
+                                    Visualization - Telling Story of Oil Data
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-sm-4 col-xs-12">
+                    <a href="#apps_war" class="portfolio-box">
+                        <img src="img/portfolio/appswar.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Apps War
+                                </div>
+                                <div class="project-category">
+                                    Top Apps for Android and iOS devices side-by-side
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <a href="#imgur" class="portfolio-box">
+                        <img src="img/portfolio/imgur.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    A Sleek Imgur Browser
+                                </div>
+                                <div class="project-category">
+                                    Imgur Client built with React/Flux
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <a href="#bonappetit" class="portfolio-box">
+                        <img src="img/portfolio/bonappetit.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Bon Appetit
+                                </div>
+                                <div class="project-category">
+                                    A React/Firebase Shopping List
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <a href="#kth_3d" class="portfolio-box">
+                        <img src="img/portfolio/kth.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    KTH Courtyard 3D
+                                </div>
+                                <div class="project-category">
+                                    3D Interactive Walkthrough of KTH Campus
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
                     <a href="#awesomegames" class="portfolio-box">
                         <img src="img/portfolio/awesome.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -275,29 +284,29 @@
                                 <div class="project-name">
                                     JS AwesomeGames
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-category">
                                     Online JS Games Store
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-sm-4 col-xs-12">
                     <a href="#ir" class="portfolio-box">
                         <img src="img/portfolio/query_expansion.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Query Expansion using Wikipedia Data
+                                    Query Expansion using Wikipedia
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-category">
                                     Search Engine and Information Retrieval Research Project
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-sm-4 col-xs-12">
                     <a href="#if-i-go-to" class="portfolio-box">
                         <img src="img/portfolio/if-i-go-to.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -305,7 +314,7 @@
                                 <div class="project-name">
                                     If I go to...
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-category">
                                     Angular 2.0 City Guide (Coming Soon)
                                 </div>
                             </div>
@@ -314,10 +323,68 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
 
         <!--Modals for the projects-->
         <div class="container">
+
+          <div class="remodal" data-remodal-id="photo_gallery">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <h1>My Photo Gallery</h1>
+              <h5>Hobby Project</h5>
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <p>Photography is a great hobby that keeps my creativity flowing. I love to travel and take candid photos of people and places.</p>
+                      <hr class="light">
+                      <p class="text-small">Programming Languages:</p>
+                      <p class="text-small">JavaScript</p>
+                      <p class="text-small">Frameworks and Libraries:</p>
+                      <p class="text-small">NodeJS, HapiJS, React, Redux</p>
+
+                      <hr class="light">
+                      <p><a href="https://thuy-gallery.herokuapp.com" target="_blank">Go to page</a></p>
+                      <p><a href="https://github.com/thuy616/photo-gallery" target="_blank">Source</a></p>
+
+                      <hr class="light">
+                      <p>Screenshots</p>
+                      <img src="img/screenshots/gallery-desktop-1.png">
+                      <img src="img/screenshots/gallery-desktop-2.png">
+                      <img src="img/screenshots/gallery-mobile-1.png">
+                      <img src="img/screenshots/gallery-mobile-2.png">
+                  </div>
+              </div>
+              <br>
+              <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
+          </div>
+
+          <div class="remodal" data-remodal-id="hdi_viz">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <h1>Exploring HDI Data</h1>
+              <h5>Hobby Project</h5>
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <p>The Human Development Index (HDI) is a composite statistic of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development.
+                      If you consider relocating to another country, this website will help you make a better decision. </p>
+                      <hr class="light">
+                      <p class="text-small">Programming Languages:</p>
+                      <p class="text-small">JavaScript</p>
+                      <p class="text-small">Frameworks and Libraries:</p>
+                      <p class="text-small">D3, jQuery</p>
+
+                      <hr class="light">
+                      <p><a href="https://thuy616.github.io/hdi-comparison" target="_blank">Go to page</a></p>
+                      <p><a href="https://github.com/thuy616/hdi-comparison" target="_blank">Source</a></p>
+
+                      <hr class="light">
+                      <p>Screenshots</p>
+                      <img src="img/screenshots/hdi-screen-1.png">
+                      <img src="img/screenshots/hdi-screen-2.png">
+                  </div>
+              </div>
+              <br>
+              <button data-remodal-action="cancel" class="btn btn-default text-center">Close</button>
+          </div>
 
             <div class="remodal" data-remodal-id="constellations_atlas">
                 <button data-remodal-action="close" class="remodal-close"></button>
@@ -641,11 +708,12 @@
         </div>
     </section>
 
-    <section class="pb-0">
+    <section id="resume" class="pb-0">
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section-heading">Resume</h2>
+                  <hr class="primary">
               </div>
           </div>
       </div>
@@ -655,7 +723,7 @@
             <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">EXPERIENCE</h4>
-                <i class="icon fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
+                <i class="icon fa fa-3x fa-briefcase wow bounceIn text-primary"></i>
               </div>
               <div class="overlay-content-collapsed">
                 <h5 class="vertical-text">EXPERIENCE</h5>
@@ -694,7 +762,7 @@
             <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">EDUCATION</h4>
-                <i class="icon fa fa-4x fa-graduation-cap wow bounceIn text-primary"></i>
+                <i class="icon fa fa-3x fa-graduation-cap wow bounceIn text-primary"></i>
               </div>
               <div class="overlay-content-collapsed">
                 <h5 class="vertical-text">EDUCATION</h5>
@@ -746,7 +814,7 @@
             <div class="overlay">
               <div class="overlay-content-open">
                 <h4 class="overlay-heading text-light text-white mt-lg">TECHNICAL SKILLS</h4>
-                <i class="icon fa fa-4x fa-cogs wow bounceIn text-primary"></i>
+                <i class="icon fa fa-3x fa-cogs wow bounceIn text-primary"></i>
               </div>
               <div class="overlay-content-collapsed">
                 <h5 class="vertical-text">SKILLS</h5>
@@ -785,135 +853,7 @@
       </div>
     </section>
 
-    <!-- <section id="resume-xs" class="visible-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Resume</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-briefcase wow bounceIn text-primary"></i>
-                        <h3>Experience</h3>
-                        <div class="content">
-                            <hr>
-                            <h4>Web Software Engineer Trainee</h4>
-                            <img src="img/logos/detour_logo.png">
-                            <p class="text-muted text-small"><a href="https://www.detour.com" style="color: #09b99c;">Detour.com</a>, San Francisco, U.S.</p>
-                            <p class="text-muted text-tiny">07/2016 - now</p>
-                            <p class="text-muted text-small">Build from scratch a Content Management Platform - Decentral - an isomorphic Web app which uses React Redux and Hapi server.</p>
-                            <p class="text-muted text-small">Maintain existing Websites and Admin panels.</p>
-                            <p class="text-muted text-small">Implement endpoints of the NodeJS API to support Web features.</p>
-                            <hr>
-                            <h4>Java Software Engineer</h4>
-                            <img src="img/logos/idt_logo.png">
-                            <p class="text-muted text-small"><a target="_blank" href="https://idtmessaging.com/" style="color: #F7CA18;">IDT Messaging Oy</a>, Helsinki, Finland</p>
-                            <p class="text-muted text-tiny">10/2015 - 05/2016</p>
-                            <p class="text-muted text-small">Research for Master Thesis on Microservices Communication - Benchmarking gRPC vs. Apache Thrift vs. Avro</p>
-                            <p class="text-muted text-small">Develop third-party API connectors to aggregate data for <a href="http://idtmessaging.com/products/magicwords/">MagicWords&reg</a> backend in Java/Xtend</p>
-                            <hr>
-                            <h4>C# Software Engineer</h4>
-                            <img src="img/logos/yokogawa_logo.gif">
-                            <p class="text-muted text-small"><a target="_blank" href="https://www.yokogawa.com/sg/" style="color: #e5d600">Yokogawa International Electric</a>, Singapore, Singapore</p>
-                            <p class="text-muted text-tiny">05/2012 - 07/2014</p>
-                            <p class="text-muted text-small">Feasibility investigations of OPC-UA protocol stack for real-time communications from data acquisition devices such as PLCs to .NET components.</p>
-                            <p class="text-muted text-small">Implemented solutions and wrote unit test cases in C# and Prism MVVM Framework</p>
-                            <p class="text-muted text-small">Designed database-schemas and XML schemas for data models</p>
-                            <p class="text-muted text-small">Transformed high-level specifications into detailed technical designs with UML diagrams</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Education</h3>
-                        <div class="content">
-                            <hr>
-                            <h4>MSc (Double Degree) ICT Innovation</h4>
-                            <img src="img/logos/aalto_logo.png">
-                            <p class="text-muted text-small">Aalto University, Helsinki, Finland</p>
-                            <p class="text-tiny">08/2014 - 11/2016</p>
-                            <p class="text-muted text-small">Graduated with Honours</p>
-                            <p class="text-muted text-small"><strong>GPA: 4.64/5.0</strong></p>
-                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Aalto_degree_certificate.pdf">Degree's Certificate</a></p>
-                            <img src="img/logos/kth_logo.png" style="margin-top:10px;margin-bottom:10px;">
-                            <p class="text-muted text-small" style="margin-top: 0px;">KTH, Stockholm, Sweden</p>
-                            <p class="text-tiny">08/2014 - 11/2016</p>
-                            <p class="text-muted text-small">Major in Digital Media Technology, Web Services</p>
-                            <p class="text-muted text-small">Minor in Innovation and Entrepreneurship</p>
-                            <p class="text-muted text-small">Excellent Academic Resutls</p>
-                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/KTH_degree_certifcate.pdf">Degree's Certificate </a></p>
-                            <hr>
-                            <h4>BSc (Hons) Information Systems</h4>
-                            <img src="img/logos/soc_logo.png">
-                            <p class="text-muted text-small">National University of Singapore</p>
-                            <p class="text-tiny">07/2007 - 02/2012</p>
-                            <p class="text-muted text-small">Specialized in Service Science, Management and Engineering</p>
-                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/Deans_List.pdf">Dean's List Award for Academic Excellence</a>, Semester I, AY2011-2012</p>
-                            <p class="text-muted text-small">Language Immersion Scholarship to learn German in Freiburg, Switzerland, Summer 2008</p>
-                            <p class="text-muted text-small"><a target="_blank" href="http://thuyn.me/others/NUS_degree_certifcate.pdf">Degree's Certificate</a></p>
-                            <hr>
-                            <h4>Exchange Studies</h4>
-                            <img class="img-small" src="img/logos/delft.png">
-                            <p class="text-muted text-small">Delft University of Technology, the Netherlands</p>
-                            <p class="text-tiny">08/2010 - 01/2011</p>
-                            <img style="height:20px; margin-top: 10px" src="img/logos/eth_short.gif">
-                            <p class="text-muted text-small">ETH Zurich, Switzerland</p>
-                            <p class="text-tiny">02/2010 - 08/2010</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-cogs wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Technical Skills</h3>
-                        <div class="content">
-                            <hr />
-                            <h4>Programming Languages</h4>
-                            <p class="text-muted text-small">JavaScript</p>
-                            <p class="text-muted text-small">Python</p>
-                            <p class="text-muted text-small">Java, C#</p>
-                            <hr/>
-                            <h4>Web Libraries/Frameworks</h4>
-                            <p class="text-muted text-small">NodeJS, ExpressJS, HapiJS</p>
-                            <p class="text-muted text-small">React, Redux, Reflux</p>
-                            <p class="text-muted text-small">Django, Django Rest Framework</p>
-                            <p class="text-muted text-small">AngularJS, MEAN Stack</p>
-                            <p class="text-muted text-small">jQuery, Bootstrap</p>
-                            <p class="text-muted text-small">CSS, SASS, LESS</p>
-                            <hr />
-                            <h4>Build Tools</h4>
-                            <p class="text-muted text-small">Gulp, Webpack</p>
-                            <hr />
-                            <h4>Databases</h4>
-                            <p class="text-muted text-small">Postgres</p>
-                            <p class="text-muted text-small">MongoDB, CouchDB, FireBase</p>
-                            <p class="text-muted text-small">MySQL, sqlite, MSSQL</p>
-                            <hr />
-                            <h4>Graphics and Visualization</h4>
-                            <p class="text-muted text-small">Three.js, D3.js, Charts.js</p>
-                            <hr />
-                            <h4>Design Tools</h4>
-                            <p class="text-muted text-small">Adobe Photoshop, Adobe
-                                <Illustrator></Illustrator>
-                            </p>
-                            <p class="text-muted text-small">Blender</p>
-                            <hr />
-                            <h4>Management Tools</h4>
-                            <p class="text-muted text-small">Git, Jira, Asana</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -921,23 +861,23 @@
                     <hr class="primary">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="text-muted">Looking for someone to join your team? That's great! Give me a call or shoot me an email and I will get back to you as soon as possible!</p>
+                    <p class="text-primary-light">Looking for someone to join your team? That's great! Give me a call or shoot me an email and I will get back to you as soon as possible!</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+                <div class="col-sm-3 col-xs-6 text-center contact-block">
                     <i class="fa fa-mobile fa-3x wow bounceIn text-secondary"></i>
-                    <p class="text-primary">+1 (415) 910 3392</p>
+                    <p class="text-primary-light text-tiny">+1 (415) 910 3392</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+                <div class="col-sm-3 col-xs-6 text-center contact-block">
                     <i class="fa fa-envelope fa-3x wow bounceIn text-secondary" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">hello@thuyn.me</a></p>
+                    <a href="mailto:your-email@your-domain.com">hello@thuyn.me</a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+                <div class="col-sm-3 col-xs-6 text-center contact-block">
                     <i class="fa fa-linkedin-square fa-3x wow bounceIn text-secondary" data-wow-delay=".1s"></i>
-                    <p><a target="_blank" href="https://fi.linkedin.com/in/nthuy">linkedin.com/in/nthuy</a></p>
+                    <a target="_blank" href="https://fi.linkedin.com/in/nthuy">linkedin.com/in/nthuy</a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+                <div class="col-sm-3 col-xs-6 text-center contact-block">
                     <i class="fa fa-github fa-3x wow bounceIn text-secondary" data-wow-delay=".1s"></i>
-                    <p><a target="_blank" href="http://www.github.com/thuy616">thuy616</a></p>
+                    <a target="_blank" href="http://www.github.com/thuy616">thuy616</a>
                 </div>
             </div>
         </div>
@@ -973,11 +913,7 @@
         var block = $(this).parent();
         block.removeClass('resume-block-open').addClass('resume-block');
         $('.resume-wrapper .resume-block-collapsed').addClass('resume-block').removeClass('resume-block-collapsed');
-      })
-
-      // from open to normal
-
-      // from collapsed to open
+      });
 
     </script>
 </body>
